@@ -1,0 +1,14 @@
+h1{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Montserrat;
+  font-size: 7vmin;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+body{
+  background-color: #09365e;
+}
