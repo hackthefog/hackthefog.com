@@ -1,4 +1,6 @@
-h1{
+.front{
+  display: flex;
+  flex-direction: column;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -9,6 +11,7 @@ h1{
   text-align: center;
   color: #fff;
 }
+.front h2 { font-size: 6vmin; }
 body{
   background-color: #09365e;
 }
