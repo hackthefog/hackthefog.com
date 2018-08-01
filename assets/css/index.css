@@ -17,6 +17,9 @@ a {
     color: white;
     text-decoration: none;
 }
+body {
+    margin: 0;
+}
 
 /* major classes */
 .flex-wrapper {
@@ -37,6 +40,13 @@ a {
 #logo {
   height: 8rem;
 }
+#header {
+    margin: 0;
+    background-color: #000000;
+}
+#about {
+    background-color: #21324f;
+}
 #header h1 {
   margin-top: 0;
 }
@@ -53,6 +63,9 @@ a {
 #sf-chron {
     width: 500px;
     height: auto;
+}
+#team {
+    background-color: #191f2b;
 }
 .staff-member {
   list-style-type: none;
@@ -81,6 +94,9 @@ a {
     max-width: var(--avatar-image-height);
     text-decoration: none;
 }
+#sponsors {
+    background-color: #122d63;
+}
 #sponsor-images {
     display: flex;
     flex-direction: row;
@@ -93,6 +109,9 @@ a {
     width: 200px;
     height: auto;
     margin: 10px;
+}
+#faq {
+    background-color: #0d121c;
 }
 .faq-question {
     list-style-type: none;
