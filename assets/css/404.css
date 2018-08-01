@@ -1,4 +1,4 @@
-.front {
+div {
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -11,7 +11,9 @@
   text-align: center;
   color: #fff;
 }
-.front h2 { font-size: 6vmin; }
+h2 {
+  font-size: 6vmin;
+}
 body {
   background-color: #09365e;
 }
