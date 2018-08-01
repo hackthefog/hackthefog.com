@@ -2,6 +2,7 @@ body {
   background-color: #09365e;
   color: white;
   font-family: Montserrat;
+  text-align: center;
 }
 #htf-1-image {
   width: 500px;
@@ -9,4 +10,11 @@ body {
 }
 a {
   color: white;
+}
+.staff-member {
+  list-style-type: none;
+}
+.staff-image {
+  border-radius: 50%;
+  height: 7.3rem;
 }
