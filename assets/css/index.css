@@ -42,9 +42,7 @@ a {
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0.5rem;
-}
-#con {
-  height: 5rem;
+  text-decoration: none;
 }
 .staff-image {
   border-radius: 50%;
@@ -52,4 +50,13 @@ a {
   -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
+}
+.name {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.25rem;
+}
+.title {
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
 }
