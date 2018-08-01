@@ -41,6 +41,9 @@ a {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
+#con {
+  height: 5rem;
+}
 .staff-image {
   border-radius: 50%;
   height: var(--avatar-image-height);
