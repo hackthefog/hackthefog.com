@@ -13,7 +13,8 @@
 
 /* element styling */
 a {
-  color: white;
+    color: white;
+    text-decoration: none;
 }
 
 /* major classes */
@@ -38,6 +39,20 @@ a {
 #header h1 {
   margin-top: 0;
 }
+#sf-chron-article {
+    /* TODO: Change the max width to the width of the image */
+
+}
+#sf-chron-title {
+    display: block;
+    max-width: 500px;
+    word-wrap: break-word;
+    margin: 0 auto;
+}
+#sf-chron {
+    width: 500px;
+    height: auto;
+}
 .staff-member {
   list-style-type: none;
   margin-top: 0;
@@ -59,4 +74,6 @@ a {
 .title {
     margin-top: 0.25rem;
     margin-bottom: 0.5rem;
+    max-width: var(--avatar-image-height);
+    text-decoration: none;
 }
