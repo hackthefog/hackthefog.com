@@ -80,6 +80,16 @@ a {
     max-width: var(--avatar-image-height);
     text-decoration: none;
 }
+#sponsor-images {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
 .sponsor {
-    margin: 20px;
+    margin: 0 auto;
+}
+.sponsor-image {
+    width: 200px;
+    height: auto;
+    margin: 10px;
 }
