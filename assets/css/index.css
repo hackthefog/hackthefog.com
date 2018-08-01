@@ -32,9 +32,11 @@ a {
 }
 
 /* individual section styles */
-#htf-1-image {
-  width: 500px;
-  height: auto;
+#logo {
+  height: 8rem;
+}
+#header h1 {
+  margin-top: 0;
 }
 .staff-member {
   list-style-type: none;
