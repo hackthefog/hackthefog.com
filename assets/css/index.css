@@ -80,3 +80,6 @@ a {
     max-width: var(--avatar-image-height);
     text-decoration: none;
 }
+.sponsor {
+    margin: 20px;
+}
