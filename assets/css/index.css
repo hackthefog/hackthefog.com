@@ -1,3 +1,12 @@
 body {
   background-color: #09365e;
 }
+
+p {
+    color: white;
+}
+
+#hackthefog-1 {
+    width: 500px;
+    height: auto;
+}
