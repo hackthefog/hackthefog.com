@@ -119,6 +119,18 @@ body {
   padding: 1em;
   border-radius: 20px;
 }
-#footer {
-  padding: 5rem;
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.social-icon-svg {
+  height: 2rem;
+  margin: 5px;
+  color: white;
+}
+footer {
+  padding: 2rem 2rem;
+  background-color: #374047;
 }
