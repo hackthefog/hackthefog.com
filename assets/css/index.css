@@ -1,20 +1,124 @@
-.front {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-family: Montserrat;
-  font-size: 7vmin;
-  width: 100%;
-  text-align: center;
-  color: #fff;
-}
-.front h2 { font-size: 6vmin; }
-body {
+:root {
+  --site-width: 40rem;
+  --side-padding: calc((100vw - var(--site-width)) / 2);
+  --avatar-image-height: 6rem;
+  --vw: 1vw;
+  --card-background: #98a6bc;
+
+  color: white;
   background-color: #09365e;
+  font-size: calc(12px + var(--vw));
+  font-family: Montserrat;
+  text-align: center;
 }
-h4 {
-	color: #09365e;
+
+/* element styling */
+a {
+  color: white;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+}
+
+/* major classes */
+.flex-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--site-width);
+}
+
+/* individual section styles */
+#logo {
+  height: 8rem;
+}
+#header {
+  margin: 0;
+  background-color: #000000;
+  padding: 5rem;
+}
+#header h1 {
+  margin-top: 0;
+}
+#sf-chron-article {
+  /* TODO: Change the max width to the width of the image */
+}
+#sf-chron-title {
+  display: block;
+  max-width: 500px;
+  word-wrap: break-word;
+  margin: 0 auto;
+}
+#sf-chron {
+  width: 500px;
+  height: auto;
+}
+#team {
+  background-color: #191f2b;
+  padding: 5rem;
+}
+.staff-member {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  background-color: var(--card-background);
+  padding: 1.5em;
+  border-radius: 10%;
+}
+.staff-image {
+  border-radius: 50%;
+  height: var(--avatar-image-height);
+  -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
+}
+.name {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+}
+.title {
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  max-width: var(--avatar-image-height);
+  text-decoration: none;
+}
+#sponsors {
+  background-color: #122d63;
+  padding: 5rem;
+}
+#sponsor-images {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.sponsor {
+  margin: 0 auto;
+}
+.sponsor-image {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+}
+#faq {
+  background-color: #0d121c;
+  padding: 5rem;
+}
+.faq-question {
+  list-style-type: none;
+  background-color: var(--card-background);
+  padding: 1em;
+  border-radius: 20px;
+}
+#footer {
+  padding: 5rem;
 }
