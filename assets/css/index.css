@@ -93,7 +93,6 @@ body {
   text-decoration: none;
 }
 #sponsors {
-  background-color: #122d63;
   padding: 5rem;
 }
 #sponsor-images {
@@ -110,7 +109,7 @@ body {
   margin: 10px;
 }
 #faq {
-  background-color: #0d121c;
+  background-color: #191f2b;
   padding: 5rem;
 }
 .faq-question {
