@@ -92,21 +92,11 @@ body {
   max-width: var(--avatar-image-height);
   text-decoration: none;
 }
-#sponsors {
-  padding: 5rem;
-}
-#sponsor-images {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-}
 .sponsor {
-  margin: 0 auto;
+  margin-top: 0;
 }
 .sponsor-image {
-  width: 200px;
-  height: auto;
-  margin: 10px;
+  height: 7rem;
 }
 #faq {
   background-color: #191f2b;
