@@ -5,9 +5,8 @@
   --vw: 1vw;
   --card-background: #98a6bc;
 
-  color: white;
-  background-color: #09365e;
-  font-size: calc(12px + var(--vw));
+  color: #303030;
+  background-color: #e4fdfd;
   font-family: Montserrat;
   text-align: center;
 }
@@ -41,24 +40,76 @@ body {
 }
 #header {
   margin: 0;
-  background-color: #000000;
-  padding: 5rem;
+  background-image: linear-gradient(to bottom, #c8e9ff, #cceffe, #d3f4fd, #dbf9fd, #e4fdfd);
+  padding: 5vmax;
+  height: calc(70vmin - 10vmax);
 }
 #header h1 {
-  margin-top: 0;
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  left: 50%;
+  top: 35%;
+  color: rgba(35, 35, 35, 0.6);
+  font-family: 'Raleway', sans-serif;
+  font-size: 14vmin;
+}
+#header p {
+  position: absolute;
+  width: 80vmin;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  left: 50%;
+  bottom: 34%;
+  font-size: 4vmin;
+  background-color: #6db7ed;
+  border: 1vmin solid #689fca;
+  color: #303030aa;
+  height: 8vmin;
+  line-height: 8vmin;
+}
+#about {
+  width: 80vw;
+  margin: auto;
+  padding: 5vw;
+  padding-top: 1vmin;
+  background-color: #3333330c;
+  border-radius: 4vmax;
+  margin-bottom: 20vh;
+}
+#about h3 {
+  grid-column-end: span 2;
+  font-size: 8vmin;
+  font-weight: lighter;
+  color: rgba(35, 35, 35, 0.8);
+}
+.about-info {
+  font-size: 3vmin;
+  width: 45%;
+}
+#about > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
 }
 #sf-chron-article {
-  /* TODO: Change the max width to the width of the image */
+  width: 40%;
+  height: fit-content;
+  align-self: center;
 }
 #sf-chron-title {
   display: block;
-  max-width: 500px;
+  max-width: 50vw;
   word-wrap: break-word;
-  margin: 0 auto;
+  margin: 2vmin auto;
+  color: rgba(35, 35, 35, 0.8);
 }
 #sf-chron {
-  width: 500px;
+  width: 100%;
   height: auto;
+  margin: auto;
 }
 #team {
   background-color: #191f2b;
@@ -76,9 +127,6 @@ body {
 .staff-image {
   border-radius: 50%;
   height: var(--avatar-image-height);
-  -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
 }
 .name {
   margin-top: 0.25rem;
@@ -95,7 +143,9 @@ body {
   margin-top: 0;
 }
 .sponsor-image {
-  height: 7rem;
+  width: 20vw;
+  height: auto;
+  margin: 2vw;
 }
 #faq {
   background-color: #191f2b;
@@ -105,7 +155,6 @@ body {
   list-style-type: none;
   background-color: var(--card-background);
   padding: 1em;
-  border-radius: 20px;
 }
 .social {
   display: flex;
@@ -115,7 +164,6 @@ body {
 }
 .social-icon-svg {
   height: 2rem;
-  margin: 5px;
   color: white;
 }
 footer {
