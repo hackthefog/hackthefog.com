@@ -1,9 +1,9 @@
 :root {
   --site-width: 40rem;
   --side-padding: calc((100vw - var(--site-width)) / 2);
-  --avatar-image-height: 6rem;
+  --avatar-image-height: 12vmin;
   --vw: 1vw;
-  --card-background: #98a6bc;
+  --card-background: #95B0B1;
 
   color: #303030;
   background-color: #e4fdfd;
@@ -13,7 +13,7 @@
 
 /* element styling */
 a {
-  color: white;
+  color: unset;
 }
 body {
   margin: 0;
@@ -36,7 +36,7 @@ body {
 
 /* individual section styles */
 #logo {
-  height: 8rem;
+  height: 20vmin;
 }
 #header {
   margin: 0;
@@ -50,10 +50,10 @@ body {
   transform: translate(-50%, -50%);
   margin: 0;
   left: 50%;
-  top: 35%;
+  top: 38vmin;
   color: rgba(35, 35, 35, 0.6);
   font-family: 'Raleway', sans-serif;
-  font-size: 14vmin;
+  font-size: 12vmin;
 }
 #header p {
   position: absolute;
@@ -61,31 +61,47 @@ body {
   transform: translate(-50%, -50%);
   margin: 0;
   left: 50%;
-  bottom: 34%;
+  top: 56vmin;
   font-size: 4vmin;
-  background-color: #6db7ed;
-  border: 1vmin solid #689fca;
+  background-color: #00aab1;
+  border: 1vmin solid #349195;
   color: #303030aa;
   height: 8vmin;
   line-height: 8vmin;
 }
-#about {
-  width: 80vw;
+
+/* Section A = odd sections, Section B = even sections */
+
+.sectionA {
+  width: 60vw;
   margin: auto;
   padding: 5vw;
   padding-top: 1vmin;
-  background-color: #3333330c;
+  background-color: #aee6e65e;
   border-radius: 4vmax;
   margin-bottom: 20vh;
 }
-#about h3 {
-  grid-column-end: span 2;
+.sectionA h3 {
   font-size: 8vmin;
   font-weight: lighter;
   color: rgba(35, 35, 35, 0.8);
 }
+.sectionB {
+  background-color: #21262cb5;
+  width: 60vw;
+  margin: auto;
+  padding: 5vw;
+  padding-top: 1vmin;
+  border-radius: 4vmax;
+  margin-bottom: 20vh;
+}
+.sectionB h3 {
+  font-size: 8vmin;
+  font-weight: lighter;
+  color: #ffffffcd;
+}
 .about-info {
-  font-size: 3vmin;
+  font-size: 2.6vmin;
   width: 45%;
 }
 #about > div {
@@ -98,6 +114,9 @@ body {
   width: 40%;
   height: fit-content;
   align-self: center;
+  background-color: #354a4b24;
+  padding: 2vmin;
+  border-radius: 2vmin;
 }
 #sf-chron-title {
   display: block;
@@ -111,18 +130,19 @@ body {
   height: auto;
   margin: auto;
 }
-#team {
-  background-color: #191f2b;
-  padding: 0.5rem;
+#staff {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
 }
 .staff-member {
   list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin: 0 2vw 5% 2vw;
   text-decoration: none;
   background-color: var(--card-background);
-  padding: 1.5em;
-  border-radius: 10%;
+  padding: 4vmin;
+  border-radius: 3vmin;
 }
 .staff-image {
   border-radius: 50%;
@@ -131,36 +151,42 @@ body {
 .name {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
-  font-size: 1.25rem;
+  font-size: 3vmin;
 }
 .title {
   margin-top: 0.25rem;
   margin-bottom: 0.5rem;
-  max-width: var(--avatar-image-height);
+  font-size: 2vmin;
+  width: var(--avatar-image-height);
+  margin: auto;
   text-decoration: none;
+}
+#sponsors h4 {
+  font-size: 5vmin;
+  font-weight: lighter;
+  color: rgba(35, 35, 35, 0.8);
 }
 .sponsor {
   margin-top: 0;
 }
 .sponsor-image {
-  width: 20vw;
+  width: 22vmin;
   height: auto;
   margin: 2vw;
-}
-#faq {
-  background-color: #191f2b;
-  padding: 5rem;
 }
 .faq-question {
   list-style-type: none;
   background-color: var(--card-background);
-  padding: 1em;
+  padding: 4vmin;
+  border-radius: 2vmin;
 }
 .social {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 50vw;
+  margin: auto;
 }
 .social-icon-svg {
   height: 2rem;
