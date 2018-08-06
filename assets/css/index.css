@@ -135,6 +135,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
+  color: #273d3a;
 }
 .staff-member {
   list-style-type: none;
@@ -179,6 +180,12 @@ body {
   background-color: var(--card-background);
   padding: 4vmin;
   border-radius: 2vmin;
+  color: #273d3a;
+  font-size: 2.6vmin;
+}
+.faq-question > .question {
+  font-size: 3vmin;
+  font-weight: bold;
 }
 .social {
   display: flex;
