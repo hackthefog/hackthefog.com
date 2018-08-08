@@ -4,7 +4,13 @@
 <head>
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/index-m.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed|Raleway" rel="stylesheet">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+  <!-- Ionicons -->
+  <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
 
   <!-- Viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -85,6 +91,13 @@
       }
     }
   </script>
+
+  <!--JQuery-->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -92,10 +105,10 @@
     <!-- This section will include the header/eye-grabber and logo -->
     <img src="assets/img/brand/logo.png" id="logo" />
     <h1>Hack the Fog 2.0</h1>
-    <p>DATE AND VENUE TBA.</p>
+    <p>APPLICATIONS OPENING SOON.</p>
   </section>
   <section id="about" class="sectionA">
-    <h3>OUR HISTORY</h3>
+    <h3>our history.</h3>
     <div>
       <div class="about-info">
         <!-- This section includes an intro to who we are and includes references from Hack the Fog 1.0 -->
@@ -110,69 +123,61 @@
           as well as the impact we have.</p>
       </div>
       <a id="sf-chron-article" href="https://www.sfchronicle.com/bayarea/article/Hack-the-Fog-makes-history-as-San-12729895.php">
-        <img id="sf-chron" src="assets/img/htf-1/sf-chronicle.jpg" />
-        <br/>
-        <span id="sf-chron-title">‘Hack the Fog’ makes history as San Francisco’s first high school hackathon</span>
+        <div id="sf-chron">
+          <div id="sf-chron-title" class="flex-row">
+            <h4>‘Hack the Fog’ makes history as San Francisco’s first high school hackathon</h4>
+            <p>www.sfchronicle.com ~ mar 5, 2018</p>
+          </div>
+        </div>
       </a>
     </div>
   </section>
-  <section id="team" class="sectionB">
-    <h3>meet the team.</h3>
-    <div id="staff">
-      <figure class="staff-member">
-        <a href="http://www.yev.sh/">
-          <img src="assets/img/staff/yev.jpg" class="staff-image" />
-          <p class="name">Yev</p>
-          <p class="title">Lead Organizer</p>
-        </a>
-      </figure>
-      <figure class="staff-member">
-        <a href="https://www.linkedin.com/in/clarissearuino/">
-          <img src="assets/img/staff/clarisse.jpg" class="staff-image" />
-          <p class="name">Clarisse</p>
-          <p class="title">Director of Outreach</p>
-        </a>
-      </figure>
-      <figure class="staff-member">
-        <a href="https://www.linkedin.com/in/theconnieliu/">
-          <img src="assets/img/staff/connie.jpg" class="staff-image" />
-          <p class="name">Connie</p>
-          <p class="title">Director of Design</p>
-        </a>
-      </figure>
-      <figure class="staff-member">
-        <a href="https://www.ruizalex.com/">
-          <img src="assets/img/staff/alex.jpg" class="staff-image" />
-          <p class="name">Alex</p>
-          <p class="title">Director of Technology</p>
-        </a>
-      </figure>
-      <figure class="staff-member">
-        <a href="https://www.linkedin.com/in/chang-amy/">
-          <img src="assets/img/staff/amy.jpg" class="staff-image" />
-          <p class="name">Amy</p>
-          <p class="title">Outreach</p>
-        </a>
-      </figure>
-      <figure class="staff-member">
-        <a href="https://zane.sh">
-          <img src="assets/img/staff/zane.jpg" class="staff-image" />
-          <p class="name">Zane</p>
-          <p class="title">Developer</p>
-        </a>
-      </figure>
-      <figure class="staff-member">
-        <a href="https://www.linkedin.com/in/rafael-cenzano/">
-          <img src="assets/img/staff/raf.jpg" class="staff-image" />
-          <p class="name">Raf</p>
-          <p class="title">Developer</p>
-        </a>
-      </figure>
+  <section id="faq" class="sectionB">
+    <h3>frequently asked.</h3>
+    <script>
+      $(function(){
+        $("div.faq-question").click(function(){
+          $(this).toggleClass("flipped");
+        });
+      });
+    </script>
+    <div class="faq-question">
+      <div class="question">
+        What is a hackathon?
+      </div>
+      <div class="answer">
+        <span>
+          A "hackathon" is an awesome event where people spend a weekend making
+          anything (that’s right, anything) that they’re interested in creating.
+        </span>
+      </div>
+    </div>
+    <div class="faq-question">
+      <div class="question">
+        Do I need to know how to code to attend?
+      </div>
+      <div class="answer">
+        <span>
+          Not at all! Hackathons are a fun experience for people of all skill
+          levels from beginner to expert!
+        </span>
+      </div>
+    </div>
+    <div class="faq-question">
+      <div class="question">
+        I have another question...
+      </div>
+      <div class="answer">
+        <span>
+          Feel free to shoot us an email at
+          <a href="mailto:contact@hackthefog.com">contact@hackthefog.com</a>!
+        </span>
+      </div>
     </div>
   </section>
   <section id="sponsors" class="sectionA">
     <!-- TODO: Implement CSS for Company logos similar to team -->
-    <h3>Sponsors</h3>
+    <h3>sponsors.</h3>
     <p>Interested in sponsoring? Read our
       <a href="https://hackthefog.com/docs/sponsor-prospectus.pdf">prospectus</a>, and
       <a href="mailto:contact@hackthefog.com">contact us</a>.</p>
@@ -188,35 +193,126 @@
       </div>
     </div>
   </section>
-  <section id="faq" class="sectionB">
-    <h3>FAQs</h3>
-    <figure class="faq-question">
-      <p class="question">
-        What is a hackathon?
-      </p>
-      <p class="answer">
-        A "hackathon" is an awesome event where people spend a weekend making
-        anything (that’s right, anything) that they’re interested in creating.
-      </p>
-    </figure>
-    <figure class="faq-question">
-      <p class="question">
-        Do I need to know how to code to attend?
-      </p>
-      <p class="answer">
-        Not at all! Hackathons are a fun experience for people of all skill
-        levels from beginner to expert!
-      </p>
-    </figure>
-    <figure class="faq-question">
-      <p class="question">
-        I have another question...
-      </p>
-      <p class="answer">
-        Feel free to shoot us an email at
-        <a href="mailto:contact@hackthefog.com">contact@hackthefog.com</a>!
-      </p>
-    </figure>
+  <section id="team" class="sectionB">
+    <h3>meet the team.</h3>
+    <!-- TODO: Transluscent picture on card hover -->
+    <!-- TODO: Take uniform pictures -->
+    <div id="staff">
+      <script>
+        $(function(){
+          $("figure.staff-member").click(function(){
+            $(this).toggleClass("flipped");
+          });
+        });
+      </script>
+      <figure class="staff-member">
+        <div class="front" style="background-image: url(assets/img/staff/yev.jpg);">
+          <p class="name">Yev</p>
+        </div>
+        <div class="back">
+          <p class="title">Lead Organizer</p>
+          <div class="flex-wrapper">
+            <a href="http://www.yev.sh/">
+              <ion-icon name="contact"></ion-icon>
+            </a>
+            <a href="mailto:yev@hackthefog.com">
+              <ion-icon name="mail"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </figure>
+      <figure class="staff-member">
+        <div class="front" style="background-image: url(assets/img/staff/clarisse.jpg);">
+          <p class="name">Clarisse</p>
+        </div>
+        <div class="back">
+          <p class="title">Director of Outreach</p>
+          <div class="flex-wrapper">
+            <a href="https://www.linkedin.com/in/clarissearuino/">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="mailto:clarisse@hackthefog.com">
+              <ion-icon name="mail"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </figure>
+      <figure class="staff-member">
+        <div class="front" style="background-image: url(assets/img/staff/connie.jpg);">
+          <p class="name">Connie</p>
+        </div>
+        <div class="back">
+          <p class="title">Director of Design</p>
+          <div class="flex-wrapper">
+            <a href="https://www.linkedin.com/in/theconnieliu/">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="mailto:connie@hackthefog.com">
+              <ion-icon name="mail"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </figure>
+      <figure class="staff-member">
+        <div class="front" style="background-image: url(assets/img/staff/alex.jpg);">
+          <p class="name">Alex</p>
+        </div>
+        <div class="back">
+          <p class="title">Co-Lead Developer</p>
+          <div class="flex-wrapper">
+            <a href="https://www.ruizalex.com/">
+              <ion-icon name="contact"></ion-icon>
+            </a>
+            <a href="mailto:alex@hackthefog.com">
+              <ion-icon name="mail"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </figure>
+      <figure class="staff-member">
+        <div class="front" style="background-image: url(assets/img/staff/amy.jpg);">
+          <p class="name">Amy</p>
+        </div>
+        <div class="back">
+          <p class="title">Outreach</p>
+          <div class="flex-wrapper">
+            <a href="https://www.linkedin.com/in/chang-amy/">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="mailto:amy@hackthefog.com">
+              <ion-icon name="mail"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </figure>
+      <figure class="staff-member">
+        <div class="front" style="background-image: url(assets/img/staff/zane.jpg);">
+          <p class="name">Zane</p>
+        </div>
+        <div class="back">
+          <p class="title">Co-Lead Developer</p>
+          <div class="flex-wrapper">
+            <a href="https://zane.sh">
+              <ion-icon name="contact"></ion-icon>
+            </a>
+            <a href="mailto:zane@hackthefog.com">
+              <ion-icon name="mail"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </figure>
+      <figure class="staff-member">
+        <div class="front" style="background-image: url(assets/img/staff/raf.jpg);">
+          <p class="name">Raf</p>
+        </div>
+        <div class="back">
+          <p class="title">Developer</p>
+          <a href="https://www.linkedin.com/in/rafael-cenzano/">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </div>
+      </figure>
+    </div>
   </section>
   <footer>
     <!-- This section has link to social media as well as email to reach us at -->
