@@ -3,7 +3,7 @@
   --side-padding: calc((100vw - var(--site-width)) / 2);
   --avatar-image-height: 12vmin;
   --vw: 1vw;
-  --card-background: #bdecf1;
+  --card-background: #b2deee;
 
   color: #f0f0f0;
   background-color: #5eade0;
@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 /* major classes */
 .flex-wrapper {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 .flex-row {
@@ -55,6 +55,10 @@ h1, h2, h3, h4, h5, h6 {
 /* individual section styles */
 #logo {
   height: 20vmin;
+  position: absolute;
+  top: 2vmin;
+  transform: translateX(-50%);
+  left: 50%;
 }
 #header {
   margin: 0;
@@ -68,10 +72,19 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate(-50%, -50%);
   margin: 0;
   left: 50%;
-  top: 38vmin;
+  top: 26vmin;
   color: #133036cc;
   font-weight: 300;
   font-size: 12vmin;
+}
+#header h2 {
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  left: 50%;
+  font-size: 6vmin;
+  top: 40vmin;
 }
 #header p {
   position: absolute;
@@ -83,9 +96,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 4vmin;
   background-color: #ee1999;
   border: 1vmin solid #b52179;
-  color: #303030aa;
+  color: #e2f5f3;
   height: 8vmin;
   line-height: 8vmin;
+  border-radius: 3vmin;
 }
 
 /* Section A = odd sections, Section B = even sections */
@@ -94,6 +108,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 90%;
   margin: auto;
   padding: 0 5% 0 5%;
+}
+.sectionB {
+  background-color: #5eade0;
 }
 .about-info {
   text-align: left;
@@ -183,6 +200,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: rotateX(0deg);
   border-bottom: 0.3rem solid #ee1999;
 }
+.staff-member .flex-wrapper { justify-content: space-evenly; }
 .front p {
   color: #133036;
   background-color: #ffffffa0;
@@ -220,8 +238,7 @@ h1, h2, h3, h4, h5, h6 {
 .title {
   margin-top: 0.25rem;
   margin-bottom: 0.5rem;
-  font-size: 2vmin;
-  width: var(--avatar-image-height);
+  font-size: 1rem;
   margin: auto;
   text-decoration: none;
 }
@@ -229,22 +246,29 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10vmin 0 10vmin 0;
 }
 #sponsors h4 {
-  font-size: 5vmin;
+  font-size: 6vmin;
   font-weight: lighter;
 }
 .sponsor {
   margin-top: 0;
 }
+#sponsors > .flex-row {
+  margin: auto;
+  background-color: var(--card-background);
+  padding: 0 4rem 0 4rem;
+  border-radius: 2.5rem;
+  filter: drop-shadow(0 0.2rem 0.2rem #00000055);
+}
 .sponsor-image {
-  width: 22vmin;
+  width: 25vmin;
   height: auto;
   margin: 2vw;
 }
 .faq-question, .question, .answer {
   max-width: 80vw;
-  max-height: 40vh;
+  max-height: 30vh;
   width: 15rem;
-  height: 10rem;
+  height: 8rem;
   margin-bottom: 4vw;
   border-radius: 2vmin;
   padding: 1.2rem;
@@ -277,7 +301,6 @@ h1, h2, h3, h4, h5, h6 {
   transform: rotateX(0deg);
   text-align: left;
   border-bottom: 0.4rem solid #ee1999;
-  filter: drop-shadow(-0.3rem 0.3rem 0.3rem #00000044);
 }
 .faq-question > .answer {
   font-size: 1rem;
@@ -285,7 +308,6 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: drop-shadow(-0.3rem 0.3rem 0.3rem #00000044);
 }
 .answer span {
   width: fit-content;
