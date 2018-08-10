@@ -240,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #273d3a;
   margin: auto;
   margin-bottom: 1rem;
-  max-width: 80vw;
+  max-width: 70vw;
   width: 50rem;
   padding: 1.5rem;
 }
@@ -252,13 +252,14 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 0.4rem solid #ee1999;
   position: relative;
   transition: color 0.2s;
+  display: grid;
+  grid-template-columns: auto 2.5rem;
 }
 .question:hover {
   color: #18a4e2;
 }
 .faq-question > .question > ion-icon {
-  position: absolute;
-  right: 0;
+  display: inline-block;
   font-size: 1.6rem;
 }
 .faq-question > .answer {
