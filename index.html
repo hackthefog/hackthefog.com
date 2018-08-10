@@ -91,10 +91,7 @@
   </script>
 
   <!--JQuery-->
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="assets/js/jQueryRotate.js"></script>
 
 </head>
@@ -112,15 +109,12 @@
     <div>
       <div class="about-info">
         <!-- This section includes an intro to who we are and includes references from Hack the Fog 1.0 -->
-        <p>On March 3rd, we ran San Francisco’s first high school hackathon. With people from the San Francisco and Oakland area,
-          we saw various hacks ranging from simple websites to mobile applications and VR. We were also featured in the San Francisco
+        <p>On March 3rd, we ran San Francisco’s first high school hackathon. With people from the San Francisco and Oakland area, we saw various hacks ranging from simple websites to mobile applications and VR. We were also featured in the San Francisco
           Chronicle.
         </p>
-        <p>We organized Hack the Fog 1.0 because we wanted an event that was highly accessible to high school students in the San
-          Francisco and Oakland area as well as many of our peers. Over the course of 24 hours from March 3rd to March 4th, we
-          saw that happen.</p>
-        <p>For Hack the Fog 2.0, San Francisco’s second high school hackathon, we’re looking to increase the number of attendees
-          as well as the impact we have.</p>
+        <p>We organized Hack the Fog 1.0 because we wanted an event that was highly accessible to high school students in the San Francisco and Oakland area as well as many of our peers. Over the course of 24 hours from March 3rd to March 4th, we saw that
+          happen.</p>
+        <p>For Hack the Fog 2.0, San Francisco’s second high school hackathon, we’re looking to increase the number of attendees as well as the impact we have.</p>
       </div>
       <a id="sf-chron-article" href="https://www.sfchronicle.com/bayarea/article/Hack-the-Fog-makes-history-as-San-12729895.php">
         <div id="sf-chron">
@@ -135,23 +129,28 @@
   <section id="faq" class="sectionB">
     <h3>frequently asked.</h3>
     <script>
-      $(function(){
-        $(".question").click(function(){
+      $(function() {
+        $(".question").click(function() {
           var styles = [];
           console.log($(this).siblings(".answer").css("height"));
-          if ($(this).siblings(".answer").css("height") == "0px"){
+          if ($(this).siblings(".answer").css("height") == "0px") {
             styles[0] = $(this).siblings(".answer").children("span").height();
             styles[1] = "0.5rem";
-            $(this).children("ion-icon").rotate({animateTo:90, duration:400});
-          }
-          else {
+            $(this).children("ion-icon").rotate({
+              animateTo: 90,
+              duration: 400
+            });
+          } else {
             styles[0] = "0px";
             styles[1] = "0px";
-            $(this).children("ion-icon").rotate({animateTo:0, duration:400});
+            $(this).children("ion-icon").rotate({
+              animateTo: 0,
+              duration: 400
+            });
           }
           $(this).siblings(".answer").animate({
-            "height":styles[0],
-            "padding-top":styles[1]
+            "height": styles[0],
+            "padding-top": styles[1]
           }, 400); //Animate dropdown
         });
       });
@@ -217,7 +216,7 @@
     <!-- TODO: Take uniform pictures -->
     <div id="staff" class="flex-wrapper">
       <figure class="staff-member">
-        <img src="assets/img/staff/yev.jpg"/>
+        <img src="assets/img/staff/yev.jpg" />
         <p class="name">Yev</p>
         <p class="title">Lead Organizer</p>
         <div class="flex-wrapper">
@@ -230,7 +229,7 @@
         </div>
       </figure>
       <figure class="staff-member">
-        <img src="assets/img/staff/clarisse.jpg"/>
+        <img src="assets/img/staff/clarisse.jpg" />
         <p class="name">Clarisse</p>
         <p class="title">Director of Outreach</p>
         <div class="flex-wrapper">
@@ -354,4 +353,5 @@
   <!-- Scripts -->
   <script src="assets/js/analytics.js"></script>
 </body>
+
 </html>
