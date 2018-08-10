@@ -229,8 +229,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 90vw;
 }
 .sponsor-image {
-  width: 10rem;
-  height: auto;
+  height: 10rem;
   margin: 2vw;
 }
 .faq-question {

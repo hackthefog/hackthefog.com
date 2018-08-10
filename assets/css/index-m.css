@@ -17,6 +17,10 @@ applied after the main index.css stylesheet.*/
     margin-right: 0;
     max-width: none;
   }
+  .sponsor-image {
+    height: auto;
+    width: 70vw;
+  }
   #sf-chron {
     width: 80vw;
     height: 52vw;
