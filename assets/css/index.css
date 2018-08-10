@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .about-info {
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   width: 45%;
 }
 #about > div {
@@ -233,55 +233,40 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
   margin: 2vw;
 }
-.faq-question, .question, .answer {
-  max-width: 80vw;
-  max-height: 30vh;
-  width: 15rem;
-  height: 8rem;
-  margin-bottom: 4vw;
-  border-radius: 2vmin;
-  padding: 1.2rem;
-}
 .faq-question {
-  display: inline-block;
-  position: relative;
+  border-radius: 1rem;
+  filter: drop-shadow(0 0.3rem 0.3rem #00000055);
   background-color: var(--card-background);
-  border-radius: 2vmin;
   color: #273d3a;
-  font-size: 2.6vmin;
-  transition: 1s;
-  transform-style: preserve-3d;
-  margin: 0 1rem 2rem 1rem;
-}
-.faq-question.flipped {
-  transform: rotateX(180deg);
-}
-.question, .answer {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin: auto;
+  margin-bottom: 1rem;
+  max-width: 80vw;
+  width: 50rem;
+  padding: 1.5rem;
 }
 .faq-question > .question {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   margin: 0;
-  z-index: 2;
-  transform: rotateX(0deg);
   text-align: left;
   border-bottom: 0.4rem solid #ee1999;
+  position: relative;
+  transition: color 0.2s;
+}
+.question:hover {
+  color: #18a4e2;
+}
+.faq-question > .question > ion-icon {
+  position: absolute;
+  right: 0;
+  font-size: 1.6rem;
 }
 .faq-question > .answer {
-  font-size: 1rem;
-  transform: rotateX(180deg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.answer span {
-  width: fit-content;
-  height: fit-content;
-  padding: 0 1rem 0 1rem;
+  font-size: 1.4rem;
+  margin: 0;
+  text-align: left;
+  overflow-y: hidden;
+  height: 0;
 }
 .social {
   display: flex;
