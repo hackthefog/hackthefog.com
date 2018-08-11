@@ -11,7 +11,7 @@
   text-align: center;
 }
 
-/* adding fonts */
+/* fonts */
 @font-face {
   font-family: "Proxima Soft";
   src: url(../fonts/proxima-nova-soft-light-webfont.ttf);
@@ -303,4 +303,40 @@ footer {
   margin-top: 10vmin;
   padding: 2rem 2rem;
   background-color: #374047;
+}
+
+/* mobile styles */
+
+@media (max-width: 900px) {
+  #about > div {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .about-info {
+    width: 85vw;
+  }
+  #sf-chron-title {
+    width: 76vw;
+    height: 16vw;
+    padding: 2vw 0 2vw 4vw;
+    top: calc(52vw - 20vw);
+    margin-right: 0;
+    max-width: none;
+  }
+  .sponsor-image {
+    height: auto;
+    width: 70vw;
+  }
+  #sf-chron {
+    width: 80vw;
+    height: 52vw;
+    margin-bottom: 5vmin;
+  }
+  #sf-chron-title h4 {
+    width: 70vw;
+    font-size: 3.4vw;
+  }
+  #sf-chron-title p {
+    font-size: 3.8vw;
+  }
 }
