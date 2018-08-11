@@ -14,11 +14,11 @@
 /* adding fonts */
 @font-face {
   font-family: "Proxima Soft";
-  src: url(../misc/proxima-nova-soft-light-webfont.ttf);
+  src: url(../fonts/proxima-nova-soft-light-webfont.ttf);
 }
 @font-face {
   font-family: "Fakt Soft Pro";
-  src: url(../misc/FaktSoftPro-Normal.ttf);
+  src: url(../fonts/FaktSoftPro-Normal.ttf);
 }
 
 /* element styling */
@@ -31,7 +31,12 @@ body {
 h3 {
   font-size: 10vmin;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #133036;
   font-weight: lighter;
   font-family: "Proxima Soft";
@@ -62,7 +67,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 #header {
   margin: 0;
-  background-image: linear-gradient(to bottom, #c8e9ff, #cceffe, #d3f4fd, #dbf9fd, #e4fdfd);
+  background-image: linear-gradient(
+    to bottom,
+    #c8e9ff,
+    #cceffe,
+    #d3f4fd,
+    #dbf9fd,
+    #e4fdfd
+  );
   padding: 5vmax;
   height: calc(70vmin - 10vmax);
 }
@@ -104,7 +116,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Section A = odd sections, Section B = even sections */
 
-.sectionA, .sectionB{
+.sectionA,
+.sectionB {
   width: 90%;
   margin: auto;
   padding: 0 5% 0 5%;
@@ -153,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #sf-chron-title p {
   margin: 0;
-  font-size: 2.0vw;
+  font-size: 2vw;
   color: #133036;
 }
 #sf-chron {
@@ -205,7 +218,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   margin: auto;
 }
-.staff-member .flex-wrapper { justify-content: space-evenly; font-size: 1.4rem;}
+.staff-member .flex-wrapper {
+  justify-content: space-evenly;
+  font-size: 1.4rem;
+}
 .staff-member .flex-wrapper a {
   height: 1.4rem;
 }
