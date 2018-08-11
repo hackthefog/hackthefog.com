@@ -101,20 +101,20 @@
     <!-- This section will include the header/eye-grabber and logo -->
     <img src="assets/img/brand/logo.png" id="logo" />
     <h1>Hack the Fog 2.0</h1>
-    <h2>San Francisco's original high school hackathon.</h2>
-    <p>APPLICATIONS OPENING SOON.</p>
+    <h2>San Francisco's original high school hackathon</h2>
+    <p>APPLICATIONS OPENING SOON</p>
   </section>
   <section id="about" class="sectionA">
-    <h3>our history.</h3>
+    <h3>about</h3>
     <div>
       <div class="about-info">
         <!-- This section includes an intro to who we are and includes references from Hack the Fog 1.0 -->
-        <p>On March 3rd, we ran San Francisco's first high school hackathon. With people from the San Francisco and Oakland area, we saw various hacks ranging from simple websites to mobile applications and VR. We were also featured in the San Francisco
-          Chronicle.
+        <p>On March 3rd, we ran San Francisco's first high school hackathon. With people from the San Francisco and Oakland area, we saw various hacks ranging from simple websites to mobile applications and VR. We were also featured in the San Francisco Chronicle.
         </p>
-        <p>We organized Hack the Fog 1.0 because we wanted an event that was highly accessible to high school students in the San Francisco and Oakland area as well as many of our peers. Over the course of 24 hours from March 3rd to March 4th, we saw that
-          happen.</p>
-        <p>For Hack the Fog 2.0, San Francisco's second high school hackathon, we're looking to increase the number of attendees as well as the impact we have.</p>
+        <p>We organized Hack the Fog 1.0 because we wanted an event that was highly accessible to high school students in the San Francisco and Oakland area as well as many of our peers. Over the course of 24 hours from March 3rd to March 4th, we saw that happen.
+	</p>
+        <p>For Hack the Fog 2.0, San Francisco's second high school hackathon, we're looking to increase the number of attendees as well as the impact we have.
+	</p>
       </div>
       <a id="sf-chron-article" href="https://www.sfchronicle.com/bayarea/article/Hack-the-Fog-makes-history-as-San-12729895.php">
         <div id="sf-chron">
@@ -126,97 +126,7 @@
       </a>
     </div>
   </section>
-  <section id="faq" class="sectionB">
-    <h3>frequently asked.</h3>
-    <script>
-      $(function() {
-        $(".question").click(function() {
-          var styles = [];
-          console.log($(this).siblings(".answer").css("height"));
-          if ($(this).siblings(".answer").css("height") == "0px") {
-            styles[0] = $(this).siblings(".answer").children("span").height();
-            styles[1] = "0.5rem";
-            $(this).children("ion-icon").rotate({
-              animateTo: 90,
-              duration: 400
-            });
-          } else {
-            styles[0] = "0px";
-            styles[1] = "0px";
-            $(this).children("ion-icon").rotate({
-              animateTo: 0,
-              duration: 400
-            });
-          }
-          $(this).siblings(".answer").animate({
-            "height": styles[0],
-            "padding-top": styles[1]
-          }, 400); //Animate dropdown
-        });
-      });
-    </script>
-    <div class="faq-question">
-      <div class="question">
-        <span>
-          What is a hackathon?
-        </span>
-        <ion-icon name="arrow-dropright"></ion-icon>
-      </div>
-      <div class="answer">
-        <span>
-          A "hackathon" is an awesome event where people spend a weekend making
-          anything (that's right, anything) that they're interested in creating.
-        </span>
-      </div>
-    </div>
-    <div class="faq-question">
-      <div class="question">
-        <span>
-          Do I need to know how to code to attend?
-        </span>
-        <ion-icon name="arrow-dropright"></ion-icon>
-      </div>
-      <div class="answer">
-        <span>
-          Not at all! Hackathons are a fun experience for people of all skill
-          levels from beginner to expert!
-        </span>
-      </div>
-    </div>
-    <div class="faq-question">
-      <div class="question">
-        <span>
-          I have another question...
-        </span>
-        <ion-icon name="arrow-dropright"></ion-icon>
-      </div>
-      <div class="answer">
-        <span>
-          Feel free to shoot us an email at
-          <a href="mailto:contact@hackthefog.com">contact@hackthefog.com</a>!
-        </span>
-      </div>
-    </div>
-  </section>
-  <section id="sponsors" class="sectionA">
-    <!-- TODO: Implement CSS for Company logos similar to team -->
-    <h3>sponsors.</h3>
-    <p>Interested in sponsoring? Read our
-      <a href="https://hackthefog.com/docs/sponsor-prospectus.pdf">prospectus</a>, and
-      <a href="mailto:contact@hackthefog.com">contact us</a>.</p>
-    <div class="flex-row">
-      <h4>some of our past sponsors</h4>
-      <div id="sponsor-images" class="flex-wrapper">
-        <figure class="sponsor">
-          <img class="sponsor-image" src="assets/img/sponsors/facebook.png" />
-        </figure>
-        <figure class="sponsor">
-          <img class="sponsor-image" src="assets/img/sponsors/google.png" />
-        </figure>
-      </div>
-    </div>
-  </section>
-  <section id="team" class="sectionB">
+<section id="team" class="sectionB">
     <h3>meet the team.</h3>
     <!-- TODO: Transluscent picture on card hover -->
     <!-- TODO: Take uniform pictures -->
@@ -311,7 +221,98 @@
       </figure>
     </div>
   </section>
-  <footer>
+
+  <section id="faq" class="sectionB">
+    <h3>frequently asked questions</h3>
+    <script>
+      $(function() {
+        $(".question").click(function() {
+          var styles = [];
+          console.log($(this).siblings(".answer").css("height"));
+          if ($(this).siblings(".answer").css("height") == "0px") {
+            styles[0] = $(this).siblings(".answer").children("span").height();
+            styles[1] = "0.5rem";
+            $(this).children("ion-icon").rotate({
+              animateTo: 90,
+              duration: 400
+            });
+          } else {
+            styles[0] = "0px";
+            styles[1] = "0px";
+            $(this).children("ion-icon").rotate({
+              animateTo: 0,
+              duration: 400
+            });
+          }
+          $(this).siblings(".answer").animate({
+            "height": styles[0],
+            "padding-top": styles[1]
+          }, 400); //Animate dropdown
+        });
+      });
+    </script>
+    <div class="faq-question">
+      <div class="question">
+        <span>
+          What is a hackathon?
+        </span>
+        <ion-icon name="arrow-dropright"></ion-icon>
+      </div>
+      <div class="answer">
+        <span>
+          A "hackathon" is an awesome event where people spend a weekend making
+          anything (that's right, anything) that they're interested in creating.
+        </span>
+      </div>
+    </div>
+    <div class="faq-question">
+      <div class="question">
+        <span>
+          Do I need to know how to code to attend?
+        </span>
+        <ion-icon name="arrow-dropright"></ion-icon>
+      </div>
+      <div class="answer">
+        <span>
+          Not at all! Hackathons are a fun experience for people of all skill
+          levels from beginner to expert!
+        </span>
+      </div>
+    </div>
+    <div class="faq-question">
+      <div class="question">
+        <span>
+          I have another question...
+        </span>
+        <ion-icon name="arrow-dropright"></ion-icon>
+      </div>
+      <div class="answer">
+        <span>
+          Feel free to shoot us an email at
+          <a href="mailto:contact@hackthefog.com">contact@hackthefog.com</a>!
+        </span>
+      </div>
+    </div>
+  </section>
+  <section id="sponsors" class="sectionA">
+    <!-- TODO: Implement CSS for Company logos similar to team -->
+    <h3>sponsors.</h3>
+    <p>Interested in sponsoring? Read our
+      <a href="https://hackthefog.com/docs/sponsor-prospectus.pdf">prospectus</a>, and
+      <a href="mailto:contact@hackthefog.com">contact us</a>.</p>
+    <div class="flex-row">
+      <h4>some of our past sponsors</h4>
+      <div id="sponsor-images" class="flex-wrapper">
+        <figure class="sponsor">
+          <img class="sponsor-image" src="assets/img/sponsors/facebook.png" />
+        </figure>
+        <figure class="sponsor">
+          <img class="sponsor-image" src="assets/img/sponsors/google.png" />
+        </figure>
+      </div>
+    </div>
+  </section>
+    <footer>
     <!-- This section has link to social media as well as email to reach us at -->
     <div class="social">
       <div class="social-icon facebook">
