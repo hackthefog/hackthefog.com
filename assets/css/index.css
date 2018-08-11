@@ -285,15 +285,8 @@ h6 {
   overflow-y: hidden;
   height: 0;
 }
-.social {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  min-width: 50vw;
-  margin: auto;
-}
 .social-icon-svg {
+  margin: 0rem 0.5rem;
   height: 2rem;
   color: white;
 }
