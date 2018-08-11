@@ -4,10 +4,11 @@
   --avatar-image-height: 12vmin;
   --vw: 1vw;
   --card-background: #b2deee;
+  --accent-color: #ee1999;
 
   color: #f0f0f0;
   background-color: #5eade0;
-  font-family: "Fakt Soft Pro";
+  font-family: "Fakt Soft Pro", sans-serif;
   text-align: center;
 }
 
@@ -106,7 +107,7 @@ h6 {
   left: 50%;
   top: 56vmin;
   font-size: 4vmin;
-  background-color: #ee1999;
+  background-color: var(--accent-color);
   border: 1vmin solid #b52179;
   color: #e2f5f3;
   height: 8vmin;
@@ -121,9 +122,6 @@ h6 {
   width: 90%;
   margin: auto;
   padding: 0 5% 0 5%;
-}
-.sectionB {
-  background-color: #5eade0;
 }
 .about-info {
   text-align: left;
@@ -157,7 +155,7 @@ h6 {
   border-bottom-left-radius: 2vw;
   border-bottom-right-radius: 2vw;
   text-align: left;
-  border-bottom: 0.4vw solid #ee1999;
+  border-bottom: 0.4vw solid var(--accent-color);
 }
 #sf-chron-title h4 {
   width: 35vw;
@@ -195,7 +193,7 @@ h6 {
   margin-bottom: 3vw;
   border-radius: 2vmin;
   padding: 1.2rem;
-  border-bottom: 0.3rem solid #ee1999;
+  border-bottom: 0.3rem solid var(--accent-color);
   color: #133036;
   filter: drop-shadow(0 0.2rem 0.2rem #00000055);
   margin-right: 2vmin;
@@ -267,7 +265,7 @@ h6 {
   font-weight: bold;
   margin: 0;
   text-align: left;
-  border-bottom: 0.4rem solid #ee1999;
+  border-bottom: 0.4rem solid var(--accent-color);
   position: relative;
   transition: color 0.2s;
   display: grid;
