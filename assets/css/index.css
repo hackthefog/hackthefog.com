@@ -178,12 +178,15 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 40vh;
   width: 12rem;
   height: 8rem;
-  margin-bottom: 4vw;
+  margin-top: 0;
+  margin-bottom: 3vw;
   border-radius: 2vmin;
   padding: 1.2rem;
   border-bottom: 0.3rem solid #ee1999;
   color: #133036;
   filter: drop-shadow(0 0.2rem 0.2rem #00000055);
+  margin-right: 2vmin;
+  margin-left: 2vmin;
 }
 .staff-member img {
   width: 5rem;
