@@ -8,17 +8,17 @@
 
   color: #f0f0f0;
   background-color: #5eade0;
-  font-family: "Fakt Soft Pro", sans-serif;
+  font-family: 'Fakt Soft Pro', sans-serif;
   text-align: center;
 }
 
 /* fonts */
 @font-face {
-  font-family: "Proxima Soft";
+  font-family: 'Proxima Soft';
   src: url(../fonts/proxima-nova-soft-light-webfont.ttf);
 }
 @font-face {
-  font-family: "Fakt Soft Pro";
+  font-family: 'Fakt Soft Pro';
   src: url(../fonts/FaktSoftPro-Normal.ttf);
 }
 
@@ -40,7 +40,7 @@ h5,
 h6 {
   color: #133036;
   font-weight: lighter;
-  font-family: "Proxima Soft";
+  font-family: 'Proxima Soft';
 }
 
 /* major classes */
@@ -86,7 +86,6 @@ h6 {
   margin: 0;
   left: 50%;
   top: 26vmin;
-  color: #133036cc;
   font-weight: 300;
   font-size: 12vmin;
 }
