@@ -66,6 +66,12 @@ h6 {
   transform: translateX(-50%);
   left: 50%;
 }
+#hc-bank {
+  position: absolute;
+  right: 4rem;
+  height: 4rem;
+  top: 3rem;
+}
 #header {
   margin: 0;
   background-image: linear-gradient(
