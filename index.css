@@ -73,6 +73,9 @@ p {
   margin-bottom: 1rem;
   text-align: left;
 }
+a {
+  color: #1054a4;
+}
 input {
   -webkit-appearance: none;
   -moz-appearance: none;
