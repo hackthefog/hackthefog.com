@@ -1,5 +1,5 @@
 @font-face {
-  font-family: FaktProSoft;
+  font-family: FaktSoftPro;
   src: url('/fonts/FaktSoftPro-Blond.eot');
   src: url('/fonts/FaktSoftPro-Blond.woff') format('woff'),
     url('/fonts/FaktSoftPro-Blond.ttf') format('truetype');
@@ -7,7 +7,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family: FaktProSoft;
+  font-family: FaktSoftPro;
   src: url('/fonts/FaktSoftPro-Normal.eot');
   src: url('/fonts/FaktSoftPro-Normal.woff') format('woff'),
     url('/fonts/FaktSoftPro-Normal.ttf') format('truetype');
@@ -15,7 +15,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family: FaktProSoft;
+  font-family: FaktSoftPro;
   src: url('/fonts/FaktSoftPro-Medium.eot');
   src: url('/fonts/FaktSoftPro-Medium.woff') format('woff'),
     url('/fonts/FaktSoftPro-Medium.ttf') format('truetype');
@@ -28,13 +28,13 @@
   box-sizing: border-box;
 }
 body {
-  font-family: FaktProSoft, system-ui, -apple-system, sans-serif;
+  font-family: FaktSoftPro, system-ui, -apple-system, sans-serif;
   font-size: 1rem;
   text-align: center;
   margin: 0;
 }
 .bg-video {
-  opacity: 0.15;
+  opacity: 0.1;
   min-height: 100%;
   min-width: 100%;
   position: absolute;
@@ -42,7 +42,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
-  filter: blur(2px);
 }
 main {
   display: flex;
@@ -53,9 +52,9 @@ main {
   overflow: hidden;
 }
 .container {
-  max-width: 36rem;
+  max-width: 40rem;
   margin: auto;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255, 0.75);
   border-radius: 0.75rem;
   padding: 2.5rem;
 }
@@ -64,13 +63,13 @@ img {
   margin-top: 1rem;
 }
 h1 {
-  font-size: 3.6rem;
-  font-weight: 900;
+  font-size: 3.8rem;
+  font-weight: 500;
   margin: 0.25rem 0;
   color: #1054a4;
 }
 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
   text-align: left;
 }
@@ -78,7 +77,7 @@ input {
   -webkit-appearance: none;
   -moz-appearance: none;
   display: block;
-  max-width: 32rem;
+  max-width: 40rem;
   width: 100%;
   min-height: 2.25rem;
   line-height: inherit;
@@ -127,7 +126,7 @@ label {
   cursor: pointer;
 }
 .updates {
-  margin: 1rem 0 0.25rem;
+  margin: 1rem 0 0.5rem;
   padding: 1.5rem 0.75rem;
   font-size: 1.75rem;
 }
@@ -148,10 +147,10 @@ label {
     padding: 0;
   }
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
   }
   p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .updates {
     padding: 1.2rem 0rem;
