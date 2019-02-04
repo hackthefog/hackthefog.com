@@ -1,0 +1,145 @@
+@font-face {
+  font-family: FaktProSoft;
+  src: url('/fonts/FaktSoftPro-Blond.eot');
+  src: url('/fonts/FaktSoftPro-Blond.woff') format('woff'),
+    url('/fonts/FaktSoftPro-Blond.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: FaktProSoft;
+  src: url('/fonts/FaktSoftPro-Normal.eot');
+  src: url('/fonts/FaktSoftPro-Normal.woff') format('woff'),
+    url('/fonts/FaktSoftPro-Normal.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: FaktProSoft;
+  src: url('/fonts/FaktSoftPro-Medium.eot');
+  src: url('/fonts/FaktSoftPro-Medium.woff') format('woff'),
+    url('/fonts/FaktSoftPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: FaktProSoft, system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  max-width: 32rem;
+  margin: auto;
+}
+img {
+  width: 16rem;
+  margin-top: 1rem;
+}
+h1 {
+  font-size: 3.8rem;
+  font-weight: 900;
+  margin: 0.25rem 0;
+  color: #1054a4;
+}
+p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  max-width: 32rem;
+  width: 100%;
+  min-height: 2.25rem;
+  line-height: inherit;
+  font-family: inherit;
+  font-size: 1.25rem;
+  padding: 0.25rem 0.5rem;
+  width: 100%;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ced3d9;
+  transition: box-shadow 0.125s ease-out;
+}
+.email-form {
+  text-align: left;
+}
+label {
+  line-height: 1.5;
+  font-size: 1.25rem;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.button {
+  border-radius: 12px;
+  font-weight: bold;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #fff;
+  background-color: #1054a4;
+  align-items: center;
+  line-height: 1.5;
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+  max-width: 32em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.updates {
+  margin: 1rem 0 0.25rem;
+  padding: 1.5rem 0.75rem;
+  font-size: 1.75rem;
+}
+.help {
+  background-color: #10a43a;
+  padding: 0.75rem 0;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 32em) {
+  main {
+    align-items: start;
+    padding: 0 0.5rem;
+  }
+  .container {
+    margin: 0;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .updates {
+    padding: 1.2rem 0rem;
+    font-size: 1.5rem;
+  }
+  .help {
+    padding: 0.75rem 0;
+    font-size: 1rem;
+  }
+}
