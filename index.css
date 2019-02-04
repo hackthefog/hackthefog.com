@@ -53,11 +53,11 @@ main {
   overflow: hidden;
 }
 .container {
-  max-width: 32rem;
+  max-width: 36rem;
   margin: auto;
   background-color: #fff;
   border-radius: 0.75rem;
-  padding: 1rem;
+  padding: 2.5rem;
 }
 img {
   width: 16rem;
