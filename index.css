@@ -33,22 +33,38 @@ body {
   text-align: center;
   margin: 0;
 }
+.bg-video {
+  opacity: 0.15;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  filter: blur(2px);
+}
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 .container {
   max-width: 32rem;
   margin: auto;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
 }
 img {
   width: 16rem;
   margin-top: 1rem;
 }
 h1 {
-  font-size: 3.8rem;
+  font-size: 3.6rem;
   font-weight: 900;
   margin: 0.25rem 0;
   color: #1054a4;
@@ -76,6 +92,7 @@ input {
   border-width: 1px;
   border-style: solid;
   border-color: #ced3d9;
+  background-color: #fff;
   transition: box-shadow 0.125s ease-out;
 }
 .email-form {
@@ -127,6 +144,8 @@ label {
   }
   .container {
     margin: 0;
+    background-color: transparent;
+    padding: 0;
   }
   h1 {
     font-size: 2.5rem;
