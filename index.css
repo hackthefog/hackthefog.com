@@ -33,6 +33,7 @@ body {
   text-align: center;
   margin: 0;
   position: relative;
+  overflow-x: hidden;
 }
 .video-container {
   overflow: hidden;
