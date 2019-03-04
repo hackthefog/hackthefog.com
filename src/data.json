@@ -1,0 +1,14 @@
+{
+  "name": "Hack the Fog 2.0 — tagline",
+  "description": "description",
+  "tagline": "tagline",
+  "url": "https://hackthefog.com",
+  "img": "https://hackthefog.com/card.png",
+  "socials": [
+    { "service": "instagram", "url": "https://www.instagram.com/hackthefog" },
+    { "service": "twitter", "url": "https://twitter.com/hackthefog" },
+    { "service": "github", "url": "https://github.com/hackthefog" },
+    { "service": "facebook", "url": "https://www.facebook.com/hackthefog" },
+    { "service": "email-fill", "url": "mailto:contact@hackthefog.com" }
+  ]
+}
