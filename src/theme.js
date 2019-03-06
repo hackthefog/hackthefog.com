@@ -4,7 +4,7 @@ import { createGlobalStyle } from 'styled-components'
 const palxColors = palx('#207AEE')
 const colors = {
   primary: '#207AEE',
-  white: '#000',
+  white: '#000', // TODO: make white
   ...palxColors,
 }
 
@@ -12,14 +12,15 @@ const fonts = {
   primary: `GothamRounded, 'Roboto', -apple-system, sans-serif`,
 }
 const fontSizes = {
-  big: '3.5rem',
-  medium: '2rem',
-  mediumSmall: '1.8rem',
-  small: '1.5rem',
-  mediumBig: '2.3rem',
+  heading: ['2rem', '3rem'],
+  subheading: ['1rem', '2rem'],
+  description: '1.25rem',
 }
 const mediaQueries = {
-  sm: '@media (max-width: 32em)',
+  sm: '@media screen and (min-width: 32em)',
+  md: '@media screen and (min-width: 48em)',
+  lg: '@media screen and (min-width: 64em)',
+  xl: '@media screen and (min-width: 80em)',
 }
 
 export const theme = {

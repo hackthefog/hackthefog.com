@@ -13,11 +13,11 @@ const Avatar = styled.img`
 
 const Wrapper = styled.div`
   width: 100%;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 `
-const Inner = styled.nav``
 const Item = styled(Link)`
   margin: 1rem 1.5rem;
   text-transform: uppercase;
@@ -31,9 +31,9 @@ const Item = styled(Link)`
 export default () => (
   <Wrapper role="navigation">
     <Logo size={64} linked />
-    <Inner>
-      <Item to="/hi">Hi</Item>
-      <Item to="/hi">Hi</Item>
-    </Inner>
+    <nav>
+      <Item href="/hi">Hi</Item>
+      <Item href="/hi">Hi</Item>
+    </nav>
   </Wrapper>
 )

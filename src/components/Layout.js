@@ -2,6 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import { theme, GlobalStyle } from '../theme'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 import data from '../data.json'
 import fonts from '../../static/fonts.css'
 
@@ -46,7 +48,11 @@ export default ({ children }) => {
         ])}
       </Helmet>
       <GlobalStyle />
-      <Wrapper>{children}</Wrapper>
+      <Wrapper>
+        <Nav />
+        {children}
+      </Wrapper>
+      <Footer />
     </>
   )
 }

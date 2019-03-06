@@ -5,7 +5,7 @@ import { socials } from '../data.json'
 
 const Wrapper = styled.div`
   display: flex;
-  margin-left: -4px;
+  margin: 0.5rem 0;
 `
 
 export default () => (
@@ -15,6 +15,7 @@ export default () => (
         key={profile.service}
         href={profile.url}
         service={profile.service}
+        size={48}
       />
     ))}
   </Wrapper>
