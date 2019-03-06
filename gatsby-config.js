@@ -17,5 +17,16 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        src: path.join(__dirname, 'src'),
+        components: path.join(__dirname, 'src/components'),
+        home: path.join(__dirname, 'src/components/home'),
+        pages: path.join(__dirname, 'src/pages'),
+        theme: path.join(__dirname, 'src/theme'),
+        data: path.join(__dirname, 'src/data.json'),
+      },
+    },
   ],
 }
