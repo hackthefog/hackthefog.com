@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import Socials from './Socials'
-import { Description } from './Text'
-import { theme } from '../theme'
+import Socials from 'components/Socials'
+import { Description } from 'components/Text'
+import { theme } from 'theme'
 
 const Wrapper = styled.footer`
   text-align: center;

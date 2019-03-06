@@ -4,8 +4,8 @@ import * as yup from 'yup'
 import axios from 'axios'
 import jsCookie from 'js-cookie'
 import styled from 'styled-components'
-import { theme } from '../theme'
-import Button from './Button'
+import { theme } from 'theme'
+import Button from 'components/Button'
 
 /*const Layout = styled(Flex).attrs({
   flexDirection: ['column', 'row'],

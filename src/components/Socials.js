@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import SocialButton from './SocialButton'
-import { socials } from '../data.json'
+import SocialButton from 'components/SocialButton'
+import { socials } from 'data'
 
 const Wrapper = styled.div`
   display: flex;

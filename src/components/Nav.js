@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from './Link'
-import Logo from './Logo'
-import { theme } from '../theme'
+import { Link } from 'components/Link'
+import Logo from 'components/Logo'
+import { theme } from 'theme'
 
 const Avatar = styled.img`
   border-radius: 50%;

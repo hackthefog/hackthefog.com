@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { theme } from '../theme'
+import { theme } from 'theme'
 
 const Heading = styled.h1`
   font-size: ${theme.fontSizes.heading[0]};
@@ -26,4 +26,8 @@ const Description = styled.p`
   font-size: ${theme.fontSizes.description};
 `
 
-export { Heading, Subheading, Description }
+const Body = styled.p`
+  font-size: 1.5rem;
+`
+
+export { Heading, Subheading, Description, Body }

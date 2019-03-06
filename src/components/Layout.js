@@ -1,10 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
-import { theme, GlobalStyle } from '../theme'
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
-import data from '../data.json'
+import { theme, GlobalStyle } from 'theme'
+import Nav from 'components/Nav'
+import Footer from 'components/Footer'
+import data from 'data'
 import fonts from '../../static/fonts.css'
 
 const meta = tags =>

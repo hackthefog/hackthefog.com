@@ -1,6 +1,6 @@
 import React from 'react'
 import Icon from '@hackclub/icons'
-import { Link } from './Link'
+import { Link } from 'components/Link'
 
 export default ({ href, service, size = 48, ...props }) => (
   <Link
