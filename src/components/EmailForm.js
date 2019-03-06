@@ -5,45 +5,18 @@ import axios from 'axios'
 import jsCookie from 'js-cookie'
 import styled from 'styled-components'
 import { theme } from 'theme'
+import Input from 'components/Input'
 import Button from 'components/Button'
 
-/*const Layout = styled(Flex).attrs({
-  flexDirection: ['column', 'row'],
-  align: ['start', 'flex-end'],
-  width: 1,
-  wrap: true
-})`
+const Layout = styled.div`
   display: flex;
-  max-width: 32rem;
-  position: relative;
-
-  label {
-    flex: 1 1 auto;
-    margin-bottom: 0;
-    width: 100%;
-  }
-
-  input:focus {
-    box-shadow: none;
-  }
-
-  a {
-    flex-shrink: 0;
-    margin-top: ${theme.space[3]}px;
-  }
+  flex-direction: column;
+  width: 100%;
 
   ${theme.mediaQueries.md} {
-    label {
-      width: auto;
-    }
-
-    a {
-      margin-left: ${theme.space[3]}px;
-      margin-top: 0;
-      line-height: 1.25;
-    }
+    flex-direction: row;
   }
-`*/
+`
 
 export default class EmailForm extends React.Component {
   state = {
@@ -86,24 +59,24 @@ export default class EmailForm extends React.Component {
         >
           {({ values, errors, handleChange, handleSubmit, isSubmitting }) => (
             <form onSubmit={handleSubmit}>
-              <p>Sign up now & we’ll notify you when registration opens.</p>
-              <input
-                type="email"
-                name="email"
-                label="Email"
-                placeholder="alex@hackthefog.com"
-                error={errors.email}
-                value={values.email}
-                onChange={handleChange}
-                fontSize={3}
-              />
-              <Button
-                type="submit"
-                onClick={handleSubmit}
-                disabled={isSubmitting}
-              >
-                Get notified
-              </Button>
+              <Layout>
+                <Input
+                  type="email"
+                  name="email"
+                  label="Email"
+                  placeholder="alex@hackthefog.com"
+                  error={errors.email}
+                  value={values.email}
+                  onChange={handleChange}
+                />
+                <Button
+                  type="submit"
+                  onClick={handleSubmit}
+                  disabled={isSubmitting}
+                >
+                  Get notified
+                </Button>
+              </Layout>
             </form>
           )}
         </Formik>

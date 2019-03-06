@@ -9,7 +9,7 @@ export default () => (
     <SplitLayout>
       <Half>todo: add article card & style everything</Half>
       <Half>
-        <Body>
+        <Body style={{ marginBottom: '1rem' }}>
           Last year, we ran Hack the Fog 1.0, San Francisco’s first high school
           hackathon — it was a massive success. Hack the Fog 2.0 is coming soon.
           Sign up below and we’ll email you when registration opens.
