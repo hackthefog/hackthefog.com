@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Heading, Body } from 'components/Text'
+import { Heading, Lead } from 'components/Text'
 import { SplitLayout, Half } from 'components/Layouts'
 import EmailForm from 'components/EmailForm'
 import { theme } from 'theme'
@@ -54,11 +54,11 @@ export default () => (
         </a>
       </Half>
       <Half>
-        <Body style={{ marginBottom: '1rem' }}>
+        <Lead>
           Last year, we ran Hack the Fog 1.0, San Francisco’s first high school
           hackathon — it was a massive success. Hack the Fog 2.0 is coming soon.
           Sign up below and we’ll email you when registration opens.
-        </Body>
+        </Lead>
         <EmailForm />
       </Half>
     </SplitLayout>

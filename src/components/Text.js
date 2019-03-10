@@ -14,10 +14,10 @@ const Big = styled.h1`
 const Heading = styled.h1`
   font-size: ${theme.fontSizes.heading[0]};
   font-weight: 700;
-  margin: 1rem 0;
 
   ${theme.mediaQueries.lg} {
     font-size: ${theme.fontSizes.heading[1]};
+    margin: 1rem 0;
   }
 `
 
@@ -37,7 +37,16 @@ const Description = styled.p`
 `
 
 const Body = styled.p`
-  font-size: 1.5rem;
+  font-size: ${theme.fontSizes.body};
 `
 
-export { Big, Heading, Subheading, Description, Body }
+const Lead = styled.p`
+  margin-bottom: 1rem;
+  font-size: ${theme.fontSizes.lead[0]};
+
+  ${theme.mediaQueries.lg} {
+    font-size: ${theme.fontSizes.lead[1]};
+  }
+`
+
+export { Big, Heading, Subheading, Description, Body, Lead }

@@ -18,6 +18,8 @@ const fontSizes = {
   heading: ['2rem', '3rem'],
   subheading: ['1rem', '2rem'],
   description: '1.25rem',
+  body: '1.5rem',
+  lead: ['1.5rem', '1.875rem'],
 }
 const mediaQueries = {
   sm: '@media screen and (min-width: 32em)',
