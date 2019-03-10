@@ -12,6 +12,7 @@ const fonts = {
   primary: `GothamRounded, 'Roboto', -apple-system, sans-serif`,
 }
 const fontSizes = {
+  big: ['4rem', '6rem'],
   heading: ['2rem', '3rem'],
   subheading: ['1rem', '2rem'],
   description: '1.25rem',
