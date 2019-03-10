@@ -11,6 +11,7 @@ const colors = {
 
 const fonts = {
   primary: `GothamRounded, 'Roboto', -apple-system, sans-serif`,
+  mercury: `Mercury, Georgia, 'Roboto', -apple-system, sans-serif`,
 }
 const fontSizes = {
   big: ['4rem', '6rem'],
