@@ -5,14 +5,14 @@ import { theme, GlobalStyle } from 'theme'
 import Nav from 'components/Nav'
 import Footer from 'components/Footer'
 import data from 'data'
-import fonts from '../../static/fonts.css'
+import fonts from '../../static/fonts/gotham-rounded/index.css'
 
 const meta = tags =>
   tags.map((props, index) =>
     React.createElement('meta', { ...props, key: index })
   )
 
-const Wrapper = styled.main`
+const Container = styled.main`
   display: flex;
   flex-flow: column;
   max-width: 64rem;
@@ -48,10 +48,10 @@ export default ({ children }) => {
         ])}
       </Helmet>
       <GlobalStyle />
-      <Wrapper>
+      <Container>
         <Nav />
         {children}
-      </Wrapper>
+      </Container>
       <Footer />
     </>
   )
