@@ -18,11 +18,12 @@ const Wrapper = styled.footer`
 const Microcopy = styled.span`
   line-height: 1.5;
   max-width: 24rem;
+  color: ${theme.colors.black};
 `
 
 export default () => (
   <Wrapper>
-    <Description>Follow us</Description>
+    <Description style={{ color: theme.colors.black }}>Follow us</Description>
     <Socials />
     <Microcopy>
       Fiscally sponsored by The Hack Foundation. Nonprofit EIN: 81-2908499.

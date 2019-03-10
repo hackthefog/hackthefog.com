@@ -10,7 +10,7 @@ export default styled.a`
   border-radius: 4px !important;
   box-shadow: none !important;
   font-family: ${theme.fonts.primary};
-  color: #fff;
+  color: ${theme.colors.white};
   background-color: ${props =>
     props.disabled ? theme.colors.gray[2] : theme.colors.primary};
 `

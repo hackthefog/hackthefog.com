@@ -4,7 +4,8 @@ import { createGlobalStyle } from 'styled-components'
 const palxColors = palx('#207AEE')
 const colors = {
   primary: '#207AEE',
-  white: '#000', // TODO: make white
+  white: '#fff',
+  black: '#000',
   ...palxColors,
 }
 
