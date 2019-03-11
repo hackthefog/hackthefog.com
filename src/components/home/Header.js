@@ -24,9 +24,6 @@ const Overlay = styled.div`
   border-radius: 0 0 1rem 1rem;
   padding: 1rem 0.75rem;
   height: 7.25rem;
-
-  ${theme.mediaQueries.lg} {
-  }
 `
 const Headline = styled.p`
   color: ${theme.colors.black};
@@ -48,8 +45,15 @@ const Details = styled.p`
   }
 `
 
+const BG = () => (
+  <style
+    children={`body{background:url(${require('../../../static/header-bg.png')});}`}
+  />
+)
+
 export default () => (
   <>
+    <BG />
     <Heading>San Francisco’s first high school hackathon is back.</Heading>
     <SplitLayout>
       <Half>

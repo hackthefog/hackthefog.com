@@ -13,7 +13,7 @@ const Avatar = styled.img`
 
 const Wrapper = styled.div`
   width: 100%;
-  margin-bottom: 2rem;
+  margin: 0.5rem 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
