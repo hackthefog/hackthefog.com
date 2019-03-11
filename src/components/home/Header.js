@@ -6,15 +6,24 @@ import EmailForm from 'components/EmailForm'
 import { theme } from 'theme'
 import fonts from '../../../static/fonts/mercury/index.css'
 
+const Wrapper = styled.div`
+  padding-bottom: 2rem;
+`
+
 const ArticleCard = styled.article`
   position: relative;
   border-radius: 1rem;
   background-image: url(${require('../../../static/news-card.jpg')});
+  background-position: bottom 0rem right -6.5rem;
   height: 20.5rem;
   margin: 1.5rem 0 0 0;
 
   ${theme.mediaQueries.md} {
     margin: 0 1.5rem 0 0;
+  }
+  ${theme.mediaQueries.lg} {
+    background-position: bottom 0rem right -2.5rem;
+    height: 21rem;
   }
 `
 const Overlay = styled.div`
@@ -23,7 +32,7 @@ const Overlay = styled.div`
   background: #e4e4e4;
   border-radius: 0 0 1rem 1rem;
   padding: 1rem 0.75rem;
-  height: 7.25rem;
+  height: 6rem;
 `
 const Headline = styled.p`
   color: ${theme.colors.black};
@@ -45,15 +54,8 @@ const Details = styled.p`
   }
 `
 
-const BG = () => (
-  <style
-    children={`body{background:url(${require('../../../static/header-bg.png')});}`}
-  />
-)
-
 export default () => (
-  <>
-    <BG />
+  <Wrapper>
     <Heading>San Francisco’s first high school hackathon is back.</Heading>
     <SplitLayout>
       <Half>
@@ -81,5 +83,5 @@ export default () => (
         <EmailForm />
       </Half>
     </SplitLayout>
-  </>
+  </Wrapper>
 )

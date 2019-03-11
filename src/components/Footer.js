@@ -6,7 +6,6 @@ import { theme } from 'theme'
 
 const Wrapper = styled.footer`
   text-align: center;
-  margin: 2rem 0 0;
   padding: 2rem 0;
   display: flex;
   flex-direction: column;

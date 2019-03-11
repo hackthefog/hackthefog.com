@@ -2,8 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import { theme, GlobalStyle } from 'theme'
-import Nav from 'components/Nav'
-import Footer from 'components/Footer'
 import data from 'data'
 import fonts from '../../static/fonts/gotham-rounded/index.css'
 
@@ -11,14 +9,6 @@ const meta = tags =>
   tags.map((props, index) =>
     React.createElement('meta', { ...props, key: index })
   )
-
-const Container = styled.main`
-  display: flex;
-  flex-flow: column;
-  max-width: 64rem;
-  padding: 1rem;
-  margin: auto;
-`
 
 export default ({ children }) => {
   return (
@@ -48,11 +38,7 @@ export default ({ children }) => {
         ])}
       </Helmet>
       <GlobalStyle />
-      <Container>
-        <Nav />
-        {children}
-      </Container>
-      <Footer />
+      <main>{children}</main>
     </>
   )
 }

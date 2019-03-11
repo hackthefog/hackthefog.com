@@ -9,5 +9,15 @@
     { "service": "github", "url": "https://github.com/hackthefog" },
     { "service": "facebook", "url": "https://www.facebook.com/hackthefog" },
     { "service": "email-fill", "url": "mailto:contact@hackthefog.com" }
+  ],
+  "team": [
+    { "name": "Zane Davis-Barrs", "pronouns": "he/him" },
+    { "name": "Alex Ruiz", "pronouns": "he/him" },
+    { "name": "Amogh Chaubey", "pronouns": "he/him" },
+    { "name": "Amy Chang", "pronouns": "she/her" },
+    { "name": "Clarisse Aruino", "pronouns": "she/her" },
+    { "name": "Connie Liu", "pronouns": "she/her" },
+    { "name": "Rafael Cenzano", "pronouns": "he/him" },
+    { "name": "Yev Barkalov", "pronouns": "he/him" }
   ]
 }
