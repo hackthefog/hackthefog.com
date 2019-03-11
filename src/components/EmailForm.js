@@ -63,8 +63,25 @@ export default class EmailForm extends React.Component {
             })
         }}
       >
-        {({ values, errors, handleChange, handleSubmit, isSubmitting }) => (
+        {({
+          values,
+          errors,
+          touched,
+          handleChange,
+          handleSubmit,
+          isSubmitting,
+        }) => (
           <form onSubmit={handleSubmit}>
+            <p style={{ marginBottom: '0.25rem' }}>
+              Enter your email to get updates
+              {errors.email &&
+                touched.email && (
+                  <span style={{ color: theme.colors.red[6] }}>
+                    {' '}
+                    — {errors.email}
+                  </span>
+                )}
+            </p>
             <Layout>
               <Input
                 type="email"
