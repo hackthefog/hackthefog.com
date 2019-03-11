@@ -1,20 +1,19 @@
 import React from 'react'
+import styled, { css } from 'styled-components'
 
-export default ({ size, color, linked, ...props }) =>
-  linked ? (
-    <a href="/">
-      <img
-        width={size}
-        src={`/logo${color ? `-${color}` : ''}.svg`}
-        alt="Hack the Fog logo"
-        {...props}
-      />
-    </a>
-  ) : (
-    <img
-      width={size}
-      src={`/logo${color ? `-${color}` : ''}.svg`}
-      alt="Hack the Fog logo"
-      {...props}
-    />
-  )
+export default ({ size, color, linked, ...props }) => {
+  const LogoImg = styled.img`
+    width: ${size};
+  `
+  return (
+    <>
+      {linked ? (
+        <a href="/">
+          <LogoImg src={`/logo${color ? `-${color}` : ''}.svg`} />
+        </a>
+      ) : (
+        <LogoImg src={`/logo${color ? `-${color}` : ''}.svg`} />
+      )}
+    </>
+  );
+}
