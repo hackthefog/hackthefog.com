@@ -7,30 +7,45 @@ import { theme } from 'theme'
 import fonts from '../../../static/fonts/mercury/index.css'
 
 const ArticleCard = styled.article`
-  margin-right: 1.5rem;
   position: relative;
   border-radius: 1rem;
   background-image: url(${require('../../../static/news-card.jpg')});
-  min-height: 20rem;
+  height: 20rem;
+  margin: 1.5rem 0 0 0;
+
+  ${theme.mediaQueries.lg} {
+    margin: 0 1.5rem 0 0;
+  }
 `
 const Overlay = styled.div`
   position: absolute;
   bottom: 0;
   background: #e4e4e4;
   border-radius: 0 0 1rem 1rem;
-  height: 7.25rem;
   padding: 1rem 0.75rem;
+  height: 7.25rem;
+
+  ${theme.mediaQueries.lg} {
+  }
 `
 const Headline = styled.p`
   color: ${theme.colors.black};
   font-family: ${theme.fonts.mercury};
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+
+  ${theme.mediaQueries.lg} {
+    font-size: 1.5rem;
+  }
 `
 const Details = styled.p`
   color: ${theme.colors.black};
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-top: 0.5rem;
+
+  ${theme.mediaQueries.lg} {
+    font-size: 1.125rem;
+  }
 `
 
 export default () => (

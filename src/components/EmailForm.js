@@ -14,8 +14,18 @@ const Layout = styled.div`
   flex-direction: column;
   width: 100%;
 
+  a {
+    margin: 0.5rem 0 0 0;
+    max-width: 8rem;
+    text-align: center;
+  }
+
   ${theme.mediaQueries.md} {
     flex-direction: row;
+    a {
+      max-width: 24rem;
+      margin: 0 0 0 0.5rem;
+    }
   }
 `
 
