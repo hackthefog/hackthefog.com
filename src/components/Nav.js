@@ -30,7 +30,7 @@ const Item = styled(Link)`
 
 export default () => (
   <Wrapper role="navigation">
-    <Logo size={64} color="inverted" linked />
+    <Logo size="6rem" color="inverted" linked />
     <nav>{/*<Item href="/register">Register</Item>*/}</nav>
   </Wrapper>
 )
