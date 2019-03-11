@@ -15,4 +15,11 @@ export default styled.input`
   &:focus {
     box-shadow: none;
   }
+
+  ${theme.mediaQueries.md} {
+    min-width: 16rem;
+  }
+  ${theme.mediaQueries.lg} {
+    min-width: 22rem;
+  }
 `

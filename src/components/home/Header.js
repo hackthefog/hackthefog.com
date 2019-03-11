@@ -10,10 +10,10 @@ const ArticleCard = styled.article`
   position: relative;
   border-radius: 1rem;
   background-image: url(${require('../../../static/news-card.jpg')});
-  height: 20rem;
+  height: 20.5rem;
   margin: 1.5rem 0 0 0;
 
-  ${theme.mediaQueries.lg} {
+  ${theme.mediaQueries.md} {
     margin: 0 1.5rem 0 0;
   }
 `
