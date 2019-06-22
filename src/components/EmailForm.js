@@ -53,7 +53,7 @@ export default class EmailForm extends React.Component {
         onSubmit={({ email }, { setSubmitting }) => {
           setSubmitting(true)
           axios
-            .post('https://usebasin.com/f/c71a8c2b1707555', { email })
+            .post('https://usebasin.com/f/01967a8ec9fc', { email })
             .then(res => {
               setSubmitting(false)
               if (res.status === 200) {
