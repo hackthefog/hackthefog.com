@@ -3,8 +3,9 @@ import { createGlobalStyle } from 'styled-components'
 
 const palxColors = palx('#207AEE')
 const colors = {
-  primary: '#207AEE',
-  white: '#fff',
+  first: '#207AEE',
+  second: ['#FF4F0A', '#FF7251'],
+  white: '#FFFCF9',
   black: '#000',
   ...palxColors,
 }
