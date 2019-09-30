@@ -11,7 +11,7 @@ export default ({question, answer, ...props}) => (
 		<p>
 			{question}
 		</p>
-		</br>
+		<br></br>
 		<p>
 			{answer}
 		</p>
