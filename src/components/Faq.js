@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import faq from 'raw-loader!../faq.txt'
+import Question from 'components/Question'
 
 const allFaqs=faq.split("\n");
 var faqObj=[];
@@ -20,10 +21,7 @@ console.log(faqObj);
 export default () => (
   <Wrapper>
 	{faqObj.map(faqSet => (
-		<>
-			<p>{faqSet.question}</p>
-			<p>{faqSet.answer}</p>
-		</>
+		<Question question={faqSet.question} answer={faqSet.answer} />
 	))}
   </Wrapper>
 )
