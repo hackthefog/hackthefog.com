@@ -97,7 +97,6 @@ export default () => (
         </HeaderWrapper>
       </Container>
     </BG>
-    {/*<Container><Team /></Container>*/}
     <Footer />
   </Layout>
 )
