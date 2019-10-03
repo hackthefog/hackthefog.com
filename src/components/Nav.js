@@ -16,7 +16,6 @@ const Wrapper = styled.div`
   width: 100%;
   margin: 0.5rem 0 2rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 `
 // eslint-disable-next-line
@@ -24,15 +23,29 @@ const Item = styled(Link)`
   margin: 1rem 1.5rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: ${theme.colors.white};
+  color: ${theme.colors.gray[8]};
   position: relative;
   display: inline-block;
   cursor: pointer;
 `
+const Nav = styled.nav`
+  margin-left: 3rem;
+  @media screen and (max-width: 760px) {
+    & > * {
+      display: none;
+    }
+  }
+`
 
 export default () => (
   <Wrapper role="navigation">
-    <Logo size="6rem" color="inverted" linked />
-    <nav>{/*<Item href="/register">Register</Item>*/}</nav>
+    <Logo size="6rem" linked />
+    <Nav>
+      <Item href="/faq">FAQ</Item>
+      <Item href="/logistics">Logistics</Item>
+      <Item href="/about">About</Item>
+      <Item href="/sponsors">Sponsors</Item>
+      <Item href="/team">Team</Item>
+    </Nav>
   </Wrapper>
 )

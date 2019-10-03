@@ -38,7 +38,7 @@ export default ({ children }) => {
         ])}
       </Helmet>
       <GlobalStyle />
-      <main>{children}</main>
+      <main style={{minHeight: '100vh'}}>{children}</main>
     </>
   )
 }
