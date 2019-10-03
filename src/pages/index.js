@@ -6,9 +6,11 @@ import Nav from 'components/Nav'
 import Header from 'home/Header'
 // import Team from 'home/Team'
 import Footer from 'components/Footer'
+import { theme } from 'theme'
 
 const BG = styled.div`
-  background-image: url(${require('../../static/header-bg.png')});
+  // background-image: url(${require('../../static/header-bg.png')});
+  background-color: ${theme.colors.white};
   background-size: cover;
 `
 

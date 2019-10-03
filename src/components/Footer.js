@@ -11,18 +11,18 @@ const Wrapper = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: ${theme.colors.gray[2]};
+  background-color: ${theme.colors.gray[9]};
 `
 
 const Microcopy = styled.span`
   line-height: 1.5;
   max-width: 24rem;
-  color: ${theme.colors.black};
+  color: ${theme.colors.white};
 `
 
 export default () => (
   <Wrapper>
-    <Description style={{ color: theme.colors.black }}>Follow us</Description>
+    <Description style={{ color: theme.colors.white }}>Follow us</Description>
     <Socials />
     <Microcopy>
       Fiscally sponsored by The Hack Foundation. Nonprofit EIN: 81-2908499.

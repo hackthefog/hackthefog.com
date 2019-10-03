@@ -1,12 +1,13 @@
 import palx from 'palx'
 import { createGlobalStyle } from 'styled-components'
 
-const palxColors = palx('#207AEE')
+const base = '#207AEE';
+
+const palxColors = palx(base)
 const colors = {
-  first: '#207AEE',
-  second: ['#FF4F0A', '#FF7251'],
+  first: base,
+  second: ['#FF7251', '#FF4F0A'],
   white: '#FFFCF9',
-  black: '#000',
   ...palxColors,
 }
 
@@ -20,7 +21,7 @@ const fontSizes = {
   subheading: ['1rem', '2rem'],
   description: '1.25rem',
   body: '1.5rem',
-  lead: ['1.5rem', '1.875rem'],
+  lead: ['1.5rem', '1.65rem'],
 }
 const mediaQueries = {
   sm: '@media screen and (min-width: 32em)',
@@ -62,6 +63,6 @@ export const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     font-family: ${fonts.primary};
-    color: ${colors.white};
+    color: ${colors.black};
   }
 `

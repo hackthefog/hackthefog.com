@@ -14,6 +14,12 @@ const Big = styled.h1`
 const Heading = styled.h1`
   font-size: ${theme.fontSizes.heading[0]};
   font-weight: 700;
+  color: ${props => props.color ? props.color : theme.colors.second[1]+`;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(${theme.colors.second[0]}, ${theme.colors.second[1]});
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text
+  ` };
 
   ${theme.mediaQueries.lg} {
     font-size: ${theme.fontSizes.heading[1]};
@@ -43,6 +49,7 @@ const Body = styled.p`
 const Lead = styled.p`
   margin-bottom: 1rem;
   font-size: ${theme.fontSizes.lead[0]};
+  color: ${props => props.color ? props.color : theme.colors.black};
 
   ${theme.mediaQueries.lg} {
     font-size: ${theme.fontSizes.lead[1]};
