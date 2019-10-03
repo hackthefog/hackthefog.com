@@ -12,7 +12,7 @@ export default () => (
     <Heading>
       San Francisco’s first high school hackathon is back.
     </Heading>
-    <Lead style={{marginTop: '1.5rem'}}>
+    <Lead style={{marginTop: '3rem'}}>
       In March 2018, we made history with Hack the Fog 1.0, San Francisco’s
       first high school hackathon — it was a massive success.
       <span style={{display:'block', marginTop: '1rem'}}>

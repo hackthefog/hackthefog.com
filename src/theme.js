@@ -21,7 +21,7 @@ const fontSizes = {
   subheading: ['1rem', '2rem'],
   description: '1.25rem',
   body: '1.5rem',
-  lead: ['1.5rem', '1.65rem'],
+  lead: ['3.5vmax', '2.5vmax'],
 }
 const mediaQueries = {
   sm: '@media screen and (min-width: 32em)',
