@@ -1,9 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 import { theme, GlobalStyle } from 'theme'
 import data from 'data'
-import fonts from '../../static/fonts/gotham-rounded/index.css'
+import '../../static/fonts/gotham-rounded/index.css'
 
 const meta = tags =>
   tags.map((props, index) =>

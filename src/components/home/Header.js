@@ -4,7 +4,7 @@ import { Heading, Lead } from 'components/Text'
 import { SplitLayout, Half } from 'components/Layouts'
 import EmailForm from 'components/EmailForm'
 import { theme } from 'theme'
-import fonts from '../../../static/fonts/mercury/index.css'
+import '../../../static/fonts/mercury/index.css'
 
 const Wrapper = styled.div`
   padding-bottom: 2rem;
@@ -62,6 +62,7 @@ export default () => (
         <a
           href="https://www.sfchronicle.com/bayarea/article/Hack-the-Fog-makes-history-as-San-12729895.php"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <ArticleCard>
             <Overlay>

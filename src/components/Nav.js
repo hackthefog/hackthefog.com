@@ -4,6 +4,7 @@ import { Link } from 'components/Link'
 import Logo from 'components/Logo'
 import { theme } from 'theme'
 
+// eslint-disable-next-line
 const Avatar = styled.img`
   border-radius: 50%;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.125);
@@ -18,6 +19,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
 `
+// eslint-disable-next-line
 const Item = styled(Link)`
   margin: 1rem 1.5rem;
   text-transform: uppercase;

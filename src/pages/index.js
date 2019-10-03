@@ -4,7 +4,7 @@ import Layout from 'components/Layout'
 import Container from 'components/Container'
 import Nav from 'components/Nav'
 import Header from 'home/Header'
-import Team from 'home/Team'
+// import Team from 'home/Team'
 import Footer from 'components/Footer'
 
 const BG = styled.div`
