@@ -58,6 +58,7 @@ export const GlobalStyle = createGlobalStyle`
     position: relative;
     height: 100%;
     max-height: 100%;
+    background-color: ${colors.white};
     width: 100%;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
