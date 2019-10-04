@@ -1,9 +1,89 @@
-Question
-Why?
-Answer
-Because.
+Place the question on the line right after 'Question'
+and after it, type the answer on the line after 'Answer'
+and it'll be added in the FAQ in that order.
+All other lines will be completely ignored.
+Case insensitive for 'Question' and 'Answer'
+
+Beginning of Questions:
 
 Question
-Where?
+What should I bring?
 Answer
-Here.
+Bring your computers, chargers, amenities, and a sleeping bag.
+
+Question
+Do I need to pay? Are there fees?
+Answer
+No, Hack the Fog is completely free!
+
+Question
+What is a Hackathon/Hack the Fog
+
+Question
+Do I need to bring my own food?
+
+Question
+Transportation Reimbursement?
+
+Question
+What if I don’t know how to code?/Who can or should attend?
+
+Question
+Where can I sleep? Should I bring a sleeping bag?
+
+Please bring your sleeping bag. There will be rooms for sleeping.
+
+Question
+Can I leave Early?
+
+Question
+What if I don’t want to present my hack?
+Answer
+We won’t force you to present.
+
+Question
+What if I don’t have an idea?
+
+Question
+What will the theme of the hackathon be?
+
+The theme will be revealed before the hacking begins.
+
+Question
+What are the age limits for Hack the Fog?
+
+Question
+When, where, how to sign up.
+Sign up on our website HackTheFog.com! (here!)
+
+Question
+What if I know no one?
+
+Question
+How many people per team?
+
+Question
+Is there wifi, laptops, chargers, etc?
+
+Question
+Are there prizes/What are the prizes?
+
+There will be prizes for the winners and the prizes will be revealed as the date of the hackathon approaches.
+
+Question
+Can a team member be offsite?
+
+Question
+Can we reuse old pre-existing projects?
+
+Question
+Where is the schedule?
+
+Question
+How will it be judged?
+
+Question
+‘Code of Conduct”!=null?true:false;
+
+Question
+Other questions: Contact us at email@email.com
