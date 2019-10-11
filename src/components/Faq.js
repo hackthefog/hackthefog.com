@@ -4,28 +4,27 @@ import faq from 'raw-loader!../faq.txt'
 import Question from 'components/Question'
 
 const allFaqs=faq.split("\n");
-var faqObj=[];
+var faqObj=new Array();
 
 //turns allFaqs from array of every line in ../faq.txt into faqObj filled with {question, answer} objects
 for(var i=1; i<allFaqs.length; i++)
 {
-	if(allFaqs[i-1].trim().toLowerCase()=="question")
+	faqObj[faqObj.length]={question: allFaqs[i], answer: []};
+	for(var ans=i; ans<allFaqs.length; ans++)
 	{
-		for(var ans=i; ans<allFaqs.length; ans++)
+		if(allFaqs[ans]==="")
 		{
-			if(allFaqs[ans].trim().toLowerCase()=="answer")
-			{
-				faqObj.push({question: allFaqs[i], answer: allFaqs[ans+1]});
-			}
+			break;
 		}
+		faqObj[faqObj.length-1].answer[faqObj[faqObj.length-1].answer.length]=allFaqs[ans];
 	}
 }
 
 const Wrapper = styled.div`
   display: flex;
+  width: calc(100vw-200px);
   margin: 0.5rem 0;
 `
-console.log(faqObj);
 
 export default () => (
   <Wrapper>

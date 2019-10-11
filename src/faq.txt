@@ -1,83 +1,60 @@
 Type the question in a line and use all the following lines for the answer.
 After typing the answer, leave an empty line to type a new question.
 
-Beginning of Questions:
+Beginning:
 
-Question
 What should I bring?
 Bring your computers, chargers, amenities, and a sleeping bag.
 
-Question
 Do I need to pay? Are there fees?
 No, Hack the Fog is completely free!
 
-Question
 What is a Hackathon/Hack the Fog
 
-Question
 Do I need to bring my own food?
 
-Question
 Transportation Reimbursement?
 
-Question
 What if I don’t know how to code?/Who can or should attend?
 
-Question
 Where can I sleep? Should I bring a sleeping bag?
 
 Please bring your sleeping bag. There will be rooms for sleeping.
 
-Question
 Can I leave Early?
 
-Question
 What if I don’t want to present my hack?
 We won’t force you to present.
 
-Question
 What if I don’t have an idea?
 
-Question
 What will the theme of the hackathon be?
 
 The theme will be revealed before the hacking begins.
 
-Question
 What are the age limits for Hack the Fog?
 
-Question
 When, where, how to sign up.
 Sign up on our website HackTheFog.com! (here!)
 
-Question
 What if I know no one?
 
-Question
 How many people per team?
 
-Question
 Is there wifi, laptops, chargers, etc?
 
-Question
 Are there prizes/What are the prizes?
 
 There will be prizes for the winners and the prizes will be revealed as the date of the hackathon approaches.
 
-Question
 Can a team member be offsite?
 
-Question
 Can we reuse old pre-existing projects?
 
-Question
 Where is the schedule?
 
-Question
 How will it be judged?
 
-Question
 ‘Code of Conduct”!=null?true:false;
 
-Question
 Other questions: Contact us at email@email.com

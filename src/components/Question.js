@@ -6,14 +6,27 @@ const Wrapper = styled.div`
   margin: 0.5rem 0;
 `
 
+const Answers = styled.div`
+  display: flex;
+  margin: 0.5rem 0;
+`
+
 export default ({question, answer, ...props}) => (
 	<Wrapper>
 		<p>
 			{question}
 		</p>
 		<br></br>
-		<p>
-			{answer}
-		</p>
+		<Answers>
+			{answer.map(ans => (
+				<>
+					<br/>
+					<p>
+						{ans}
+					</p>
+				</>
+				)
+			)}
+		</Answers>
 	</Wrapper>
 )
