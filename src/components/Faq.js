@@ -13,8 +13,8 @@ for(var currentLine=1; currentLine<allFaqs.length; currentLine++)
   if(allFaqs[currentLine-1].trim()==="")
   {
     //make new object in array to array.map() and increment current line so that the question doesn't become part of the answer
-  	faqObj[faqObj.length]={question: allFaqs[i], answer: []};
-    i++;
+  	faqObj[faqObj.length]={question: allFaqs[currentLine], answer: []};
+    currentLine++;
   	for(var ans=currentLine; ans<allFaqs.length; ans++)
   	{
       //loops and adds each following line as another array item in faqObj.answer[] until it finds next blank line
