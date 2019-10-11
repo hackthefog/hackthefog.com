@@ -1,6 +1,6 @@
 Type the question in a line and use all the following lines for the answer.
 After typing the answer, leave an empty line to type a new question.
-
+------------------------------
 Beginning:
 
 What should I bring?
@@ -55,6 +55,7 @@ Where is the schedule?
 
 How will it be judged?
 
-‘Code of Conduct”!=null?true:false;
+Is there a Code of Conduct?
+Yes.
 
 Other questions: Contact us at email@email.com
