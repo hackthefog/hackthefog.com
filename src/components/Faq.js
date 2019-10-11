@@ -31,14 +31,14 @@ const Wrapper = styled.div`
 	display: flex;
 	width: calc(100vw-200px);
 	margin: 0.5rem 0;
-	background-color: white;
-	min-height: 20vh;
-	padding: 0px auto;
-	background-color: #AAA;
-	border-radius: 25px;
-	flex-wrap: wrap;
-	align-content: flex-start;
-	justify-content: space-around;
+	padding: 10px 0px 0px;
+  margin: 20px 0px;
+  background-color: #AAA;
+  border-radius: 25px;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
 `
 
 export default () => (

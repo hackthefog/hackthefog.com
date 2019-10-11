@@ -3,12 +3,21 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   display: flex;
-  margin: 0.5rem 0;
+  padding: 25px;
+  margin: 20px 0px;
+  background-color: #BBB;
+  border-radius: 25px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
 `
 
 const Answers = styled.div`
+  padding: 0px;
+  margin: 10px 0px;
   display: flex;
-  margin: 0.5rem 0;
+  margin: 0;
 `
 
 export default ({question, answer, ...props}) => (
@@ -16,7 +25,6 @@ export default ({question, answer, ...props}) => (
 		<p>
 			{question}
 		</p>
-		<br></br>
 		<Answers>
 			{answer.map(ans => (
 				<>
