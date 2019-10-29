@@ -35,7 +35,7 @@ function processFAQs(FAQCount)
   //Includes the last lines of text
   faqObj[faqObj.length-1].answer=answerArr;
   //Cuts the size of FAQs off
-  if(FAQCount!=NaN && FAQCount>0)
+  if(isNaN(FAQCount) && FAQCount>0)
   {
     faqObj=faqObj.slice(0, FAQCount);
   }
