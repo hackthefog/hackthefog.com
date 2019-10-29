@@ -16,7 +16,7 @@ export default () => (
     <BG>
       <Container>
         <Nav />
-        <Faq />
+        <Faq number="All"/>
       </Container>
     </BG>
     <Footer />

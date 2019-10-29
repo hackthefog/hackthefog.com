@@ -8,7 +8,7 @@ import Question from 'components/Question'
 var faqObj=[];
 
 //Splits the faq lines into objects with {question: "String", answer: ["Array", "of", "Strings"]}
-function processFAQs()
+function processFAQs(FAQCount)
 {
   //Separates the long one string into lines
   const allFaqs=faq.split("\n");
@@ -34,6 +34,11 @@ function processFAQs()
   }
   //Includes the last lines of text
   faqObj[faqObj.length-1].answer=answerArr;
+  //Cuts the size of FAQs off
+  if(FAQCount!=NaN && FAQCount>0)
+  {
+    faqObj=faqObj.slice(0, FAQCount);
+  }
 }
 
 const Wrapper = styled.div`
@@ -50,11 +55,12 @@ const Wrapper = styled.div`
   justify-content: center;
 `
 
-processFAQs();
-export default () => (
+export default ({number}) => (
 	<Wrapper>
-		{faqObj.map(faqSet => (
-			<Question question={faqSet.question} answer={faqSet.answer} />
+    {
+      processFAQs(parseInt(number)),
+      faqObj.map(faqSet => (
+			<Question question={faqSet.question} answer={faqSet.answer}/>
 		))}
 	</Wrapper>
 )
