@@ -14,10 +14,10 @@ const Wrapper = styled.div`
 `
 
 const Answers = styled.div`
-  padding: 0px;
-  margin: 10px 0px;
-  display: flex;
+  padding: 10px;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 `
 
 export default ({question, answer, ...props}) => (
@@ -27,12 +27,9 @@ export default ({question, answer, ...props}) => (
 		</p>
 		<Answers>
 			{answer.map(ans => (
-				<>
-					<br/>
-					<p>
-						{ans}
-					</p>
-				</>
+				<p>
+					{ans}
+				</p>
 				)
 			)}
 		</Answers>

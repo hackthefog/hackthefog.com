@@ -12,6 +12,7 @@ function processFAQs()
 {
   //Separates the long one string into lines
   const allFaqs=faq.split("\n");
+  //Using this variable because I can't .push() on answer:[] after creating it
   var answerArr=[];
   for(var currentLine=1; currentLine<allFaqs.length; currentLine++)
   {
@@ -23,6 +24,7 @@ function processFAQs()
         faqObj[faqObj.length-1].answer=answerArr;
       }
       faqObj.push({question: allFaqs[currentLine], answer: []});
+      //Reset array
       answerArr=[];
     }
     else
@@ -30,6 +32,8 @@ function processFAQs()
       answerArr.push(allFaqs[currentLine]);
     }
   }
+  //Includes the last lines of text
+  faqObj[faqObj.length-1].answer=answerArr;
 }
 
 const Wrapper = styled.div`
