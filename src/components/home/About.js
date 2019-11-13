@@ -55,12 +55,12 @@ const Newscard = styled.div`
     height: fit-content;
     background-color: ${theme.colors.gray[9]};
     color: ${theme.colors.gray[0]};
-    line-height: 1.8rem;
+    line-height: 2rem;
     font-weight: bold;
     box-sizing: border-box;
-    padding: .5rem 1rem;
+    padding: .6rem 1.4rem;
     font-family: Jomolhari;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   span.bot {
     position: absolute;
