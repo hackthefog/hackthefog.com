@@ -44,6 +44,17 @@ const Presenters = styled.div`
   }
 `
 
+const SVG = styled.svg`
+  display: block;
+  height: 4rem;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4rem;
+  color: ${theme.colors.gray[9]}
+`
+
 export default () => (
   <Wrapper>
     <Presenters>
@@ -55,5 +66,6 @@ export default () => (
     <Big style={{color: theme.colors.first, width: "100%", textAlign: "center"}}>
       Hack the Fog 2.0
     </Big>
+    <SVG xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></SVG>
   </Wrapper>
 )

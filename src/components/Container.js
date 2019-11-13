@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { theme } from 'theme'
 
 export default styled.div`
   display: flex;
@@ -6,4 +7,5 @@ export default styled.div`
   max-width: 64rem;
   padding: 1rem;
   margin: auto;
+  background-color: ${theme.colors.white};
 `
