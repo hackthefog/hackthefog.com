@@ -58,9 +58,9 @@ const SVG = styled.svg`
 export default () => (
   <Wrapper>
     <Presenters>
-      <img src={mblogo} />
+      <img alt="Mission Bit" src={mblogo} />
       <span> + </span>
-      <img src={logo} />
+      <img alt="Hack the Fog" src={logo} />
       <span> present</span>
     </Presenters>
     <Big style={{color: theme.colors.first, width: "100%", textAlign: "center"}}>

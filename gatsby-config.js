@@ -30,5 +30,25 @@ module.exports = {
         data: path.join(__dirname, 'src/data.json'),
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `img`,
+        path: path.join(__dirname, `src/img`)
+      }
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Jomolhari`,
+            variants: [`400`]
+          },
+        ],
+      },
+    },
   ],
 }
