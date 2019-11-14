@@ -27,7 +27,7 @@ module.exports = {
         home: path.join(__dirname, 'src/components/home'),
         pages: path.join(__dirname, 'src/pages'),
         theme: path.join(__dirname, 'src/theme'),
-        data: path.join(__dirname, 'src/data.json'),
+        data: path.join(__dirname, 'src/data'),
       },
     },
     {
