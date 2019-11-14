@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Layout from 'components/Layout'
 import Container from 'components/Container'
 import Nav from 'components/Nav'
-import Faq from 'components/faq'
+import Faq from 'components/Faq'
 import Footer from 'components/Footer'
 
 const BG = styled.div`

@@ -57,10 +57,11 @@ const Wrapper = styled.div`
 
 export default ({number}) => (
 	<Wrapper>
+    {processFAQs(parseInt(number))}
     {
-      processFAQs(parseInt(number)),
       faqObj.map(faqSet => (
-			<Question question={faqSet.question} answer={faqSet.answer}/>
-		))}
+  			<Question question={faqSet.question} answer={faqSet.answer}/>
+  		))
+    }
 	</Wrapper>
 )
