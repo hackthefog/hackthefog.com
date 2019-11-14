@@ -19,7 +19,7 @@ function processFAQs(FAQCount)
     question: false,
     answer: []
   };
-  while ((FAQCount && faqs.length < FAQCount) && i < allLines.length)
+  while ((!FAQCount || faqs.length < FAQCount) && i < allLines.length)
   {
     let line = allLines[i];
 
