@@ -12,5 +12,5 @@ export default styled.a`
   font-family: ${theme.fonts.primary};
   color: ${theme.colors.white};
   background-color: ${props =>
-    props.disabled ? theme.colors.gray[7] : theme.colors.primary};
+    props.disabled ? theme.colors.gray[7] : theme.colors.first};
 `
