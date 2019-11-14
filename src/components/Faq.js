@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-//Imports faq.txt into one mega string
+import { theme } from 'theme'
 import faq from 'raw-loader!../faq.txt'
-import Question from 'components/Question'
 
 //Splits the faq lines into objects with {question: "String", answer: ["Array", "of", "Strings"]}
 function processFAQs(FAQCount)
@@ -40,26 +39,64 @@ function processFAQs(FAQCount)
   return faqs;
 }
 
-const Wrapper = styled.div`
+const FAQDisplay = styled.div`
 	display: flex;
-	width: calc(100vw-200px);
-	margin: 0.5rem 0;
-	padding: 10px 0px 0px;
-  margin: 20px 0px;
-  background-color: #AAA;
-  border-radius: 25px;
   flex-wrap: wrap;
-  align-content: center;
-  flex-direction: column;
+  align-content: flex-start;
   justify-content: center;
+  flex-direction: column;
+  & > * { flex-basis: 100% }
+  ${theme.mediaQueries.md} {
+    & > * { flex-basis: 50% }
+    flex-direction: row;
+  }
 `
 
 export default ({number}) => (
-	<Wrapper>
+	<FAQDisplay>
     {
       processFAQs(parseInt(number)).map(faqSet => (
   			<Question question={faqSet.question} answer={faqSet.answer}/>
   		))
     }
-	</Wrapper>
+	</FAQDisplay>
+)
+
+/**********************/
+/***extra components***/
+/**********************/
+
+const QuestionWrapper = styled.div`
+  display: flex;
+  padding: 2rem;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+`
+
+const Answer = styled.div`
+  font-weight: lighter;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+`
+
+const Question = ({question, answer, ...props}) => (
+	<QuestionWrapper>
+		<p>
+			{question}
+		</p>
+		<Answer>
+			{answer.map(ans => (
+				<p>
+					{ans}
+				</p>
+				)
+			)}
+		</Answer>
+	</QuestionWrapper>
 )
