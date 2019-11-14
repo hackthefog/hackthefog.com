@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { theme } from 'theme'
+import { blurb } from 'data'
 
 import { Heading } from 'components/Text'
 
@@ -16,6 +17,7 @@ const FlexWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   ${theme.mediaQueries.lg} {
+    align-items: flex-start;
     flex-direction: row;
   }
 `
@@ -28,7 +30,9 @@ const About = (props) => {
       </Heading>
       <FlexWrapper>
         <Article />
-        <Blurb />
+        <Blurb>
+          {blurb}
+        </Blurb>
       </FlexWrapper>
     </Wrapper>
   )
@@ -39,10 +43,23 @@ export default About
 /**********************/
 /***extra components***/
 /**********************/
+const Blurb = styled.p`
+  margin-top: 2rem;
+  font-size: 1.5em;
+  padding: 0 1em;
+  ${theme.mediaQueries.lg} {
+    padding: 0;
+    font-size: 1.6em;
+    margin-left: 2rem;
+    margin-top: 0;
+  }
+`;
+
 const Newscard = styled.div`
-  height: 50vw;
+  height: 20em;
   width: 95%;
   background: no-repeat center/cover url("${newscard}");
+  flex-shrink: 0;
   ${theme.mediaQueries.lg} {
     height: 25rem;
     width: 55%;
@@ -81,13 +98,4 @@ const Article = (props) => {
       </a>
     </Newscard>
   )
-}
-
-class Blurb extends React.Component {
-  render () {
-    return (
-      <div>
-      </div>
-    );
-  }
 }

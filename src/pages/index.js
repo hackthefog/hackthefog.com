@@ -77,7 +77,7 @@ export default () => (
         </HeaderWrapper>
       </Container>
       <Container
-        style={{minHeight: "80vh"}}>
+        style={{paddingBottom: "4em"}}>
         <About />
       </Container>
     </BG>
