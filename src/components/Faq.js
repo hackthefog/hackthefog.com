@@ -4,41 +4,40 @@ import styled from 'styled-components'
 import faq from 'raw-loader!../faq.txt'
 import Question from 'components/Question'
 
-//used in making FAQ objects
-var faqObj=[];
-
 //Splits the faq lines into objects with {question: "String", answer: ["Array", "of", "Strings"]}
 function processFAQs(FAQCount)
 {
   //Separates the long one string into lines
-  const allFaqs=faq.split("\n");
-  //Using this variable because I can't .push() on answer:[] after creating it
-  var answerArr=[];
-  for(var currentLine=1; currentLine<allFaqs.length; currentLine++)
+  const allLines = faq
+    .split("\n")
+    .map(line => line.trim())
+    .filter(line => line.indexOf("//") !== 0); // remove comments
+
+  var faqs = [];
+
+  let i = 0;
+  let obj = {
+    question: false,
+    answer: []
+  };
+  while ((FAQCount && faqs.length < FAQCount) && i < allLines.length)
   {
-    if(allFaqs[currentLine-1].trim()==="")
-    {
-      //Prevents loop from accessing faqObj[-1]
-      if(faqObj.length>0)
-      {
-        faqObj[faqObj.length-1].answer=answerArr;
-      }
-      faqObj.push({question: allFaqs[currentLine], answer: []});
-      //Reset array
-      answerArr=[];
+    let line = allLines[i];
+
+    if (!obj.question)
+      obj.question = line;
+    else if (line !== "")
+      obj.answer.push(line);
+    else {
+      faqs.push(Object.assign({}, obj));
+      obj = {
+        question: false,
+        answer: []
+      };
     }
-    else
-    {
-      answerArr.push(allFaqs[currentLine]);
-    }
+    i++;
   }
-  //Includes the last lines of text
-  faqObj[faqObj.length-1].answer=answerArr;
-  //Cuts the size of FAQs off
-  if(isNaN(FAQCount) && FAQCount>0)
-  {
-    faqObj=faqObj.slice(0, FAQCount);
-  }
+  return faqs;
 }
 
 const Wrapper = styled.div`
@@ -57,9 +56,8 @@ const Wrapper = styled.div`
 
 export default ({number}) => (
 	<Wrapper>
-    {processFAQs(parseInt(number))}
     {
-      faqObj.map(faqSet => (
+      processFAQs(parseInt(number)).map(faqSet => (
   			<Question question={faqSet.question} answer={faqSet.answer}/>
   		))
     }

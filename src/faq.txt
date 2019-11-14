@@ -1,8 +1,8 @@
-Type the question in a line and use all the following lines for the answer.
-After typing the answer, leave an empty line to type a new question.
-------------------------------
-Beginning:
-
+// Type the question in a line and use all the following lines for the answer.
+// After typing the answer, leave an empty line to type a new question.
+// ------------------------------
+// Beginning:
+//
 What should I bring?
 Bring your computers, chargers, amenities, and a sleeping bag.
 
@@ -71,4 +71,4 @@ Is there a Code of Conduct?
 Yes.
 
 I have a different question!
-For other questions, contact us at alex@hackthefog.com.
+For other questions, contact us at contact@hackthefog.com.
