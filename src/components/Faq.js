@@ -45,9 +45,8 @@ const FAQDisplay = styled.div`
   align-content: flex-start;
   justify-content: center;
   flex-direction: column;
-  & > * { flex-basis: 100% }
+  * { width: 100%; }
   ${theme.mediaQueries.md} {
-    & > * { flex-basis: 50% }
     flex-direction: row;
   }
 `
@@ -68,12 +67,16 @@ export default ({number}) => (
 
 const QuestionWrapper = styled.div`
   display: flex;
-  padding: 2rem;
+  padding: 1rem;
   flex-wrap: wrap;
   align-content: flex-start;
   flex-direction: column;
-  justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.3em;
+  ${theme.mediaQueries.md} {
+    width: 50%;
+    font-size: 1.5em
+    padding: 2rem;
+  }
   font-weight: bolder;
 `
 
