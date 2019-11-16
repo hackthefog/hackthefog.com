@@ -56,6 +56,7 @@ const Blurb = styled.p`
 `;
 
 const Newscard = styled.div`
+  border-radius: 1rem;
   height: 20em;
   width: 95%;
   background: no-repeat center/cover url("${newscard}");
@@ -67,6 +68,7 @@ const Newscard = styled.div`
   position: relative;
 
   span {
+    border-radius: 1rem 1rem 0 0;
     display: block;
     width: 100%;
     height: fit-content;
@@ -75,11 +77,12 @@ const Newscard = styled.div`
     line-height: 2rem;
     font-weight: bold;
     box-sizing: border-box;
-    padding: .6rem 1.4rem;
     font-family: Jomolhari;
     font-size: 1.5rem;
+    padding: .5em 1.2em;
   }
   span.bot {
+    border-radius: 0 0 1rem 1rem;
     position: absolute;
     bottom: 0;
     font-size: 1rem;
