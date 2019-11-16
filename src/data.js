@@ -26,6 +26,19 @@ export const blurb = `
   wonderful night of hacking and creativity! Sign up below and we’ll email you
   when registration opens.
 `;
+export const partners = {
+  platinum: [
+    {
+      name: "MissionBit",
+      url: "https://www.missionbit.com",
+      img: "missionbit.png"
+    }
+  ],
+  gold: [
+  ],
+  bronze: [
+  ]
+};
 
 export default {
   name,
@@ -33,6 +46,7 @@ export default {
   url,
   socials,
   team,
-  blurb
+  blurb,
+  partners
 };
 // export { socials as socials };

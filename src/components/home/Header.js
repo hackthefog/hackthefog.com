@@ -4,10 +4,11 @@ import { Big } from 'components/Text'
 import '../../../static/fonts/mercury/index.css'
 import { theme } from 'theme'
 
-import mblogo from '../../img/missionbit.png'
-import logo from '../../img/logo.svg'
+import mblogo from 'images/partners/missionbit.png'
+import logo from 'images/logo.svg'
 
 const Wrapper = styled.div`
+  z-index: -1;
   position: absolute;
   display: flex;
   align-items: center;

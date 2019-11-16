@@ -28,6 +28,7 @@ module.exports = {
         pages: path.join(__dirname, 'src/pages'),
         theme: path.join(__dirname, 'src/theme'),
         data: path.join(__dirname, 'src/data'),
+        images: path.join(__dirname, 'src/img'),
       },
     },
     {

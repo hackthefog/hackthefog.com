@@ -7,6 +7,7 @@ import Nav from 'components/Nav'
 import Header from 'home/Header'
 import About from 'home/About'
 import FAQ from 'home/FAQ'
+import Partners from 'home/Partners'
 
 import Footer from 'components/Footer'
 import { theme } from 'theme'
@@ -81,9 +82,12 @@ export default () => (
         style={{paddingBottom: "4em"}}>
         <About />
       </Container>
+      <Container>
+        <FAQ />
+      </Container>
       <Container
         style={{paddingBottom: "4em"}}>
-        <FAQ />
+        <Partners />
       </Container>
     </BG>
     <Footer />
