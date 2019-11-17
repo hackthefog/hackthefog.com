@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from 'styled-components'
-import { Heading } from 'components/Text'
+import { Heading, Subheading } from 'components/Text'
 
 import { theme } from 'theme'
 // import Button from 'components/Button'
@@ -17,7 +17,8 @@ class Partners extends React.Component {
         <PartnerGroup
           logoSize={"20rem"}
           mLogoSize={"15rem"}
-          data={data.platinum} />
+          data={data.platinum}
+          header={"Venue:"} />
       </div>
     );
   }
@@ -30,6 +31,7 @@ class Partners extends React.Component {
 const PartnerWrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   padding: 1rem 2rem 0;
 `
 const StyledAnchor = styled.a`
@@ -43,6 +45,16 @@ const StyledAnchor = styled.a`
   ${theme.mediaQueries.lg} {
     width: ${props => props.size || "initial"};
     height: ${props => props.size || "initial"};
+  }
+`
+const PartnerHeading = styled(StyledAnchor)`
+  background-color: ${theme.colors.gray[2]};
+  color: ${theme.colors.gray[8]}
+  font-size: calc(${props => props.mSize || props.size || "initial"} / 6);
+  padding: 2rem;
+  border: .5rem solid ${theme.colors.gray[3]};
+  ${theme.mediaQueries.lg} {
+    font-size: calc(${props => props.size || "initial"} / 6);
   }
 `
 const PartnerLink = (props) =>
@@ -71,17 +83,25 @@ class PartnerGroup extends React.Component {
   render () {
     console.log(this.state.partners);
     return (
-      <PartnerWrapper>
-        {this.state.partners.map(p =>
-          <PartnerLink
-            key={p.name}
-            href={p.url}
-            src={p.imgURL}
-            alt={p.name}
+      <div>
+        <PartnerWrapper>
+          <PartnerHeading
+            as="div"
             size={this.props.logoSize}
-            mSize={this.props.mLogoSize} />
-        )}
-      </PartnerWrapper>
+            mSize={this.props.mLogoSize}>
+            {this.props.header}
+          </PartnerHeading>
+          {this.state.partners.map(p =>
+            <PartnerLink
+              key={p.name}
+              href={p.url}
+              src={p.imgURL}
+              alt={p.name}
+              size={this.props.logoSize}
+              mSize={this.props.mLogoSize} />
+          )}
+        </PartnerWrapper>
+      </div>
     );
   }
 }
