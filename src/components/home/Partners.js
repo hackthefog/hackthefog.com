@@ -69,7 +69,6 @@ class PartnerGroup extends React.Component {
     }
   }
   render () {
-    console.log(this.state.partners);
     return (
       <PartnerWrapper>
         {this.state.partners.map(p =>

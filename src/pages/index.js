@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import { Element } from 'react-scroll'
 
 import styled from 'styled-components'
 import Layout from 'components/Layout'
@@ -89,10 +90,12 @@ export default (props) => (
           <Header />
         </HeaderWrapper>
       </Container>
-      <Container
-        style={{paddingBottom: "4em"}}>
-        <About />
-      </Container>
+      <Element name="content">
+        <Container
+          style={{paddingBottom: "4em"}}>
+          <About />
+        </Container>
+      </Element>
       <Container>
         <FAQ />
       </Container>
