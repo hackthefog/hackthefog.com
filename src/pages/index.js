@@ -1,4 +1,7 @@
 import React from 'react'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
+
 import styled from 'styled-components'
 import Layout from 'components/Layout'
 import Container from 'components/Container'
@@ -17,6 +20,21 @@ const BG = styled.div`
   position: relative;
   min-height: 100vh;
 `
+export const query = graphql`
+  query MyQuery {
+    allFile(filter: {sourceInstanceName: {eq: "img"}, base: {regex: "/slide/"}}) {
+      edges {
+        node {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
 const properties = {
   duration: 5000,
@@ -24,16 +42,6 @@ const properties = {
   infinite: true,
   indicators: false,
   arrows: false,
-}
-var items = [];
-for (let i = 1; i < 10; i++){
-  items.push(
-    <div className="each-slide">
-      <div style={{'backgroundImage': `url(slides/slide${i}.jpg)`,
-        backgroundSize: 'cover'}}>
-      </div>
-    </div>
-  );
 }
 
 const HeaderWrapper = styled.div`
@@ -64,7 +72,7 @@ const HeaderWrapper = styled.div`
   }
 `
 
-export default () => (
+export default (props) => (
   <Layout>
     <BG>
       <Container
@@ -73,7 +81,10 @@ export default () => (
         <HeaderWrapper>
           <div className="bg" />
           <Slide {...properties} id="slideshow">
-            {items}
+            {props.data.allFile.edges.map(node =>
+              <Img className="each-slide"
+                fluid={node.node.childImageSharp.fluid} />
+            )}
           </Slide>
           <Header />
         </HeaderWrapper>
