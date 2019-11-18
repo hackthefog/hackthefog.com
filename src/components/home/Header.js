@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { Big } from 'components/Text'
 import '../../../static/fonts/mercury/index.css'
 import { theme } from 'theme'
@@ -45,16 +45,30 @@ const Presenters = styled.div`
   }
 `
 
+const pulseAnimation = keyframes`
+  0% {
+    height: 4rem;
+    bottom: 4rem;
+  }
+  25% {
+    height: 5rem;
+    bottom: 3rem;
+  }
+  50% {
+    height: 4rem;
+    bottom: 4rem;
+  }
+`
 const SVGWrap = styled.div`
   svg {
+    transform: translate(-50%, -50%);
     display: block;
     height: 4rem;
-    margin: auto;
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 50%;
     bottom: 4rem;
-    color: ${theme.colors.gray[9]}
+    color: ${theme.colors.gray[9]};
+    animation: ${pulseAnimation} 3s ease-out infinite;
   }
 `
 
