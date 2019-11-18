@@ -13,7 +13,7 @@ class Partners extends React.Component {
   render () {
     return (
       <div>
-        <Heading>Partners</Heading>
+        <Heading>Partnered with:</Heading>
         <PartnerGroup
           logoSize={"20rem"}
           mLogoSize={"15rem"}
