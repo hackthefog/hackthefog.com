@@ -11,7 +11,7 @@ const FAQ = (props) => {
     <div style={{display: "flex", flexDirection: "column"}}>
       <Heading>FAQ</Heading>
       <FAQContainer number={4} />
-      <Button as={Link} to="faq"
+      <Button as={Link} to="/faq"
         style={{textDecoration: "none", fontWeight: "bold",
           fontSize: "2em", padding: ".4em .6em", margin: "auto"}}>
         View all
