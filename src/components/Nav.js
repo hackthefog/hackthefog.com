@@ -29,6 +29,7 @@ const Item = styled(Link)`
   cursor: pointer;
 `
 const Nav = styled.nav`
+  z-index: 5;
   margin-left: 3rem;
   @media screen and (max-width: 760px) {
     & > * {
