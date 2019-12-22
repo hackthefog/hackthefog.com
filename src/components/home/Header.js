@@ -1,25 +1,92 @@
 import React from 'react'
-import styled from 'styled-components'
-import { Heading, Lead } from 'components/Text'
+import styled, { keyframes } from 'styled-components'
+import { Big } from 'components/Text'
 import '../../../static/fonts/mercury/index.css'
+import { theme } from 'theme'
+import { Link } from 'react-scroll'
+
+import mblogo from 'images/partners/missionbit.png'
+import logo from 'images/logo.svg'
 
 const Wrapper = styled.div`
-  padding-bottom: 2rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+`
+const Presenters = styled.div`
+  img {
+    height: 3rem;
+  }
+  span {
+    white-space: pre;
+  }
+  font-weight: 700;
+  font-size: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: ${theme.colors.second[1]};
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(${theme.colors.second[0]}, ${theme.colors.second[1]});
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+
+  ${theme.mediaQueries.lg} {
+    color: #000;
+    font-size: 4vw;
+    img { height: 4vw; }
+  }
+`
+
+const pulseAnimation = keyframes`
+  0% {
+    height: 4rem;
+    bottom: 4rem;
+  }
+  25% {
+    height: 5rem;
+    bottom: 3rem;
+  }
+  50% {
+    height: 4rem;
+    bottom: 4rem;
+  }
+`
+const SVGWrap = styled.div`
+  svg {
+    transform: translate(-50%, -50%);
+    display: block;
+    height: 4rem;
+    position: absolute;
+    left: 50%;
+    bottom: 4rem;
+    color: ${theme.colors.gray[9]};
+    animation: ${pulseAnimation} 3s ease-out infinite;
+  }
 `
 
 export default () => (
   <Wrapper>
-    <Heading>
-      San Francisco’s first high school hackathon is back.
-    </Heading>
-    <Lead style={{marginTop: '3rem'}}>
-      In March 2018, we made history with Hack the Fog 1.0, San Francisco’s
-      first high school hackathon — it was a massive success.
-      <span style={{display:'block', marginTop: '1rem'}}>
-        Hack the Fog 2.0 is happening on February 15-16, 2020. Join us for
-        another wonderful night of hacking and creativity! Sign up below and
-        we’ll email you when registration opens.
-      </span>
-    </Lead>
+    <Presenters>
+      <img alt="Mission Bit" src={mblogo} />
+      <span> + </span>
+      <img alt="Hack the Fog" src={logo} />
+      <span> present</span>
+    </Presenters>
+    <Big style={{color: theme.colors.first, width: "100%", textAlign: "center"}}>
+      Hack the Fog 2.0
+    </Big>
+    <SVGWrap>
+      <Link smooth={true} duration={1000} to="content">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg>
+      </Link>
+    </SVGWrap>
   </Wrapper>
 )

@@ -27,7 +27,28 @@ module.exports = {
         home: path.join(__dirname, 'src/components/home'),
         pages: path.join(__dirname, 'src/pages'),
         theme: path.join(__dirname, 'src/theme'),
-        data: path.join(__dirname, 'src/data.json'),
+        data: path.join(__dirname, 'src/data'),
+        images: path.join(__dirname, 'src/img'),
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `img`,
+        path: path.join(__dirname, `src/img`)
+      }
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Jomolhari`,
+            variants: [`400`]
+          },
+        ],
       },
     },
   ],
