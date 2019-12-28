@@ -3,72 +3,48 @@
 // ------------------------------
 // Beginning:
 //
-What should I bring?
-Bring your computers, chargers, amenities, and a sleeping bag.
-
-Do I need to pay? Are there fees?
-No, Hack the Fog is completely free!
-
-What is a Hackathon/Hack the Fog?
-Create stuff and try to win prizes.
-
-Do I need to bring my own food?
-No, we will feed you.
-
-Transportation Reimbursement?
-TBD.
-Ask us by emailing us.
-
+What should I bring? Do I need to pay?
+Hack the Fog is completely free to attend! Though we provide snacks and meals, you’ll need to bring, at the very least, your laptop, chargers for your phone and computer, and your student ID. (We’re not yet sure if we’ll be able to provide computers, but if you sign up we’ll let you know by email!)
+It’s highly recommended to bring a water bottle, a sleeping bag, blanket, and/or onesie, and a toothbrush and toothpaste.
+ 
+What is a hackathon?
+A hackathon is a 24-hour marathon competition where you and a team of up to 4 people can create anything you want with tech. What you create is up to you - whether it’s a website, a game, or even an artistic hardware project, you can submit your creation to be judged by a panel of actual people working in the tech field. We’ll even reward you and your team with big prizes if your project is exceptionally cool! (Prizes to be announced soon!)
+Hackathons are also great chances to connect with other students interested in tech, meet representatives from actual companies, and get exclusive info on what it’s like to work in tech!
+ 
+What makes Hack the Fog different from any other Bay Area hackathon?
+Hack the Fog is focused on opening the doors into the tech world for public school students in San Francisco and Oakland. Most of our team is in the SFUSD school district, and knows that public school computer science curriculum is not the best way to learn how to learn to code.
+At the same time, our hackathon wants to create a memorable experience through fun activities and being up close and personal with everyone. Come to Hack the Fog and be part of a family of people who will support you in your technological endeavors!
+ 
+Can I be reimbursed for transportation?
+This is yet to be officially announced, but we can try to help you on a case-by-case basis if you email us at contact@hackthefog.com.
+ 
 What if I don’t know how to code? Can I still attend?
-We will have workshops hosted by Mission Bit and others to teach you how to code something so we welcome all highschoolers to attend.
-
+We love beginners at Hack the Fog! We’ll have a plethora of workshops hosted by coders at several tech companies and startups in the Bay Area where you can learn skills people actually use in the industry. Have an idea but don’t know where to start? Our experienced staff and mentors will help guide you! DM us in the Slack (to be released soon) or just talk to us in person!
+ 
 Where can I sleep? Should I bring a sleeping bag?
-Please bring your sleeping bag. There will be rooms for sleeping.
-
-Can I leave early?
-Sure, why not.
-
+Please bring your sleeping bag. We will have a separate quiet space for students to sleep.
+ 
 What if I don’t want to present my hack?
-We won’t force you to present.
-
+That’s totally fine! You are not obligated to submit anything to attend, this is just an event for you to learn and connect with other high school coders. For example, if you wanted to code something in a group with 5 other people (above the group limit according to the rules), there’s nothing stopping you, you just can’t submit your hack to be judged.
+ 
 What if I don’t have an idea?
-We will have workshops where you may get ideas from.
-
-What will the theme of the hackathon be?
-The theme will be revealed before the hacking begins.
-
+We’ll have plenty of resources for you to be inspired, don’t worry if you can’t think of an idea to code when you arrive! Feel free to attend workshops and browse around other tables to see what people are making before you begin. We’ll also be releasing a Hack the Fog 2.0 Slack soon, where you can chat with other people to potentially form groups or share resources and ideas.
+ 
 What are the age limits for Hack the Fog?
-Hack the Fog is for current highschoolers (Grades 9-12).
-
-When, where, how to sign up.
-Sign up on our website HackTheFog.com! (here!)
-
-What if I know no one?
-In the opening ceremony, we will group you up with others if you don't have a group.
-
-How many people per team?
-Anywhere from solo to four.
-
+Hack the Fog 2.0 is only available to high schoolers - sorry, college kids! If you are a middle schooler and want to attend, please email us at contact@hackthefog.com - we will accept you on a case-by-case basis.
+ 
+How do I sign up?
+Click here, or the “Sign up” button on our home page to fill out our sign-up form! You will receive an email once you’ve been accepted, and you’ll get important announcements such as reminders, access to our Slack, and other stuff.
+ 
+I don’t know any other hackers/coders...
+Hack the Fog is a great chance to meet people like you who want to get into tech! Other than our Slack (which is coming soon), where you can chat with people who will be attending the event, we’ll have a team-forming event after our opening ceremony where you can find a group.
+ 
+What are the rules if I want to submit a project?
+Hacks must be made by groups of up to four people, no more. Other than pre-made external libraries and tools, the code can only be made during the event. We will have a Devpost page up soon where teams must submit their hacks before the 24 hours are up.
+Other than the above rules, you’re free to do whatever you want as long as you use common sense - don’t make things that would potentially hurt people in any way. Hack for good!
+ 
 Is there wifi, laptops, chargers, etc?
-WiFi will be provided. We may have laptops to be loaned out during the hackathon but they are loaned out on a first come, first serve basis.
-
-Are there prizes/What are the prizes?
-There will be prizes for the winners and the prizes will be revealed as the date of the hackathon approaches.
-
-Can a team member be offsite?
-Yes, but you must be onsite to claim a prize if you win.
-
-Can we reuse old pre-existing projects?
-If it fits the theme, sure why not.
-
-Where is the schedule?
-Look at our homepage!
-
-How will it be judged?
-By judges.
-
-Is there a Code of Conduct?
-Yes.
+WiFi will be provided. We don’t know yet if we’ll be able to provide laptops/computers, but we’ll let you know if you sign up with your email!
 
 I have a different question!
-For other questions, contact us at contact@hackthefog.com.
+Don't be shy, shoot us an email at contact@hackthefog.com!
