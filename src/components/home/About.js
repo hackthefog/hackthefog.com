@@ -77,7 +77,6 @@ const Newscard = styled.div`
     line-height: 2rem;
     font-weight: bold;
     box-sizing: border-box;
-    font-family: Jomolhari;
     font-size: 1.5rem;
     padding: .5em 1.2em;
   }
