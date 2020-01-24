@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import { Element } from 'react-scroll'
 
@@ -7,6 +7,7 @@ import styled from 'styled-components'
 import Layout from 'components/Layout'
 import Container from 'components/Container'
 import Nav from 'components/Nav'
+import Button from 'components/Button'
 
 import Header from 'home/Header'
 import About from 'home/About'
@@ -73,6 +74,17 @@ const HeaderWrapper = styled.div`
   }
 `
 
+const StyledButton = styled(Button)`
+  ${theme.mediaQueries.sm} {
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+  }
+  font-size: 12vw;
+  margin: 2rem auto 0;
+  padding: 6vw 10vw;
+  font-weight: bold;
+`;
+
 export default (props) => (
   <Layout>
     <BG>
@@ -93,7 +105,16 @@ export default (props) => (
       <Element name="content">
         <Container
           style={{paddingBottom: "4em"}}>
-          <About />
+          <About>
+            In March 2018, we made history with Hack the Fog 1.0, San Francisco’s first high
+            school hackathon — it was a massive success.
+
+            Hack the Fog 2.0 is happening on March 28-29, 2020. Join us for another
+            wonderful night of hacking and creativity and register below!
+          </About>
+          <StyledButton as={Link} to="register">
+            REGISTER
+          </StyledButton>
         </Container>
       </Element>
       <Container>

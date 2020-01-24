@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { theme } from 'theme'
-import { blurb } from 'data'
 
 import { Heading } from 'components/Text'
 
@@ -31,7 +30,7 @@ const About = (props) => {
       <FlexWrapper>
         <Article />
         <Blurb>
-          {blurb}
+          {props.children}
         </Blurb>
       </FlexWrapper>
     </Wrapper>

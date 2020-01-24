@@ -14,18 +14,11 @@ export const team = [
   { "name": "Amy Chang", "pronouns": "she/her" },
   { "name": "Rafael Cenzano", "pronouns": "he/him" },
   { "name": "Alex Ruiz", "pronouns": "he/him" },
+  { "name": "Neel Redkar", "pronouns": "he/him" },
   { "name": "Cappillen Lee", "pronouns": "he/him" },
   { "name": "Luna Isabel", "pronouns": "she/her" },
   { "name": "Marvin Lee", "pronouns": "he/him" }
 ];
-export const blurb = `
-  In March 2018, we made history with Hack the Fog 1.0, San Francisco’s first high
-  school hackathon — it was a massive success.
-
-  Hack the Fog 2.0 is happening on March 28-29, 2020. Join us for another
-  wonderful night of hacking and creativity! Sign up below and we’ll email you
-  when registration opens.
-`;
 export const partners = {
   platinum: [
     {
@@ -46,7 +39,6 @@ export default {
   url,
   socials,
   team,
-  blurb,
   partners
 };
 // export { socials as socials };

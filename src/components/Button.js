@@ -13,4 +13,5 @@ export default styled.a`
   color: ${theme.colors.white};
   background-color: ${props =>
     props.disabled ? theme.colors.gray[7] : theme.colors.first};
+  text-decoration: none;
 `
