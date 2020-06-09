@@ -85,6 +85,20 @@ const StyledButton = styled(Button)`
   font-weight: bold;
 `;
 
+const StyledButton1 = styled.a`
+  ${theme.mediaQueries.sm} {
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+  }
+  font-size: 12vw;
+  margin: 2rem auto 0;
+  padding: 6vw 10vw;
+  font-weight: bold;
+  background-color: #207aee;
+  color: #fff;
+  text-decoration: none;
+`;
+
 export default (props) => (
   <Layout>
     <BG>
@@ -109,12 +123,11 @@ export default (props) => (
             In March 2018, we made history with Hack the Fog 1.0, San Francisco’s first high
             school hackathon — it was a massive success.
 
-            Hack the Fog 2.0 is happening on March 28-29, 2020. Join us for another
-            wonderful night of hacking and creativity and register below!
+            Checkout our online hackathon below!
           </About>
-          <StyledButton as={Link} to="register">
-            REGISTER
-          </StyledButton>
+          <StyledButton1 href="https://cloud.hackthefog.com/">
+            Hack the Cloud (Virtual hackathon)
+          </StyledButton1>
         </Container>
       </Element>
       <Container>
