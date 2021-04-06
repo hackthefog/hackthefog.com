@@ -8,7 +8,7 @@
   ],
   "dependencies": {
     "@hackclub/icons": "^0.0.1",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "babel-plugin-styled-components": "^1.8.0",
     "formik": "^1.5.1",
     "gatsby": "^2.19.3",
